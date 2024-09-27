@@ -1,5 +1,6 @@
 import * as S from '../../styles/LayoutStyles';
-import { VerticalLine, ImageContainer, RetanguloEsquerdoInferior, Cubo } from './SidebarLeft.styles';
+import { VerticalLine, ImageContainer, Cubo } from './SidebarLeft.styles';
+// import {  RetanguloEsquerdoInferior} from './SidebarLeft.styles';
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { SvgLink } from '../Header/Header.styles';
 

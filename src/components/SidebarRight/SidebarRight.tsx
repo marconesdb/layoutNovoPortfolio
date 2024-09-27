@@ -1,5 +1,7 @@
 import * as S from '../../styles/LayoutStyles';
-import { CuboDireito, RetanguloDireito, RetanguloDireitoInferior} from '../SidebarRight/SidebarRight.styles';
+import { CuboDireito} from '../SidebarRight/SidebarRight.styles';
+// import {RetanguloDireito} from '../SidebarRight/SidebarRight.styles';
+// import {RetanguloDireitoInferior} from '../SidebarRight/SidebarRight.styles';
 function SidebarRight() {
 
   return (
