@@ -137,7 +137,7 @@ export const DropdownMenu = styled.div<{ isOpen: boolean }>`
   left: 50%;
   transform: translateX(-50%);
   background-color: #444;
-  min-width: 100px;
+  min-width: 75px;
   z-index: 1000;
   padding: 5px 0;
   border-radius: 4px;
