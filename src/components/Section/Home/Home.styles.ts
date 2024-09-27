@@ -22,7 +22,7 @@ export const Container = styled.section`
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
   height: auto; /* Permitir crescimento vertical */
   overflow-x: hidden; /* Prevenir rolagem horizontal no container */
-  height: 80vh;
+  height: 85vh;
 `;
 
 
