@@ -22,7 +22,7 @@ export const Container = styled.section`
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
   height: auto; /* Permitir crescimento vertical */
   overflow-x: hidden; /* Prevenir rolagem horizontal no container */
-  height: 100vh;
+  height: 80vh;
 `;
 
 
@@ -46,10 +46,7 @@ export const TextSection = styled.div`
   flex: 1;
   text-align: left;
   margin: 0;
-  padding: 0;
-
-  
-  
+  padding: 0; 
 `;
 
 // Componente ImageSection
