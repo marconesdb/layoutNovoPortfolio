@@ -56,7 +56,8 @@ export const Header = styled.header`
   padding: 20px;
   width: 100%; /* Ocupa 100% do espaço da área definida */
   height: 80px; /* Definindo uma altura fixa */
-  
+  border: 1px solid #000000;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
 `;
 
 export const SidebarLeft = styled.aside`
@@ -86,22 +87,22 @@ export const SidebarRight = styled.aside`
 
 export const Main = styled.main`
   grid-area: main;
-  background-color: #388e3c;
-  padding: 20px;
+  /* background-color: #388e3c; */
+  /* padding: 20px; */
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  /* gap: 20px; */
   box-sizing: border-box; /* Garante que padding seja incluído nas dimensões */
   margin-top: 10px;
 
 
   section {
-    background: white;
     padding: 20px;
     border-radius: 8px;
     width: 100%; /* Garante que o conteúdo não ultrapasse */
     flex-grow: 0; /* Permite que as seções cresçam, mas sem gerar overflow */
     flex-shrink: 0; /* Mantém o tamanho mínimo */
+    
   }
 `;
 

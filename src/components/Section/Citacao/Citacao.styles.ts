@@ -1,6 +1,6 @@
 // Home.styles.tsx
 import styled from "styled-components";
-
+const primaryColor = "#2c3036"; 
 
 
 // Componente Container
@@ -16,6 +16,7 @@ export const Container = styled.section`
   height: 100vh;
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
   overflow-x: hidden; /* Prevenir rolagem horizontal no container */
+  background-color: ${primaryColor};
 `;
 
 

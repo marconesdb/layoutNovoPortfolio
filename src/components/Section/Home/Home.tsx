@@ -1,5 +1,5 @@
 // Home.tsx
-// import fotoPerfil from '../../assets/images/Marcone.png';
+import fotoPerfil from '../../../assets/images/Marcone.png';
 
 import { 
   Container, 
@@ -9,7 +9,7 @@ import {
   Title, 
   Subtitle, 
   ContactButton, 
-  // Image, 
+  Image, 
   ImageQuadrado, 
   PortfolioTag, 
   Logo, 
@@ -20,10 +20,13 @@ const Home = () => {
     <Container id="inicio">
       <ContentWrapper>
         <TextSection>
-          <Title>
-            Marcone S. de Brito é <br></br>
-            <span> Analista de Sistemas</span> e <span>Desenvolvedor</span> <span className='TextoFront-end'>Front-end.</span>
-          </Title>
+        <Title>
+          Marcone S. de Brito é<br />
+          <span>Analista de Sistemas</span> e<br />
+          <span>Desenvolvedor <br/> Front-end</span>
+        </Title>
+
+
           <Subtitle>“Transformo ideias em realidade, codificando a Web com bytes de inovação.”</Subtitle>
           <ContactButton href="https://wa.me/5538992182727" target="_blank" rel="noopener noreferrer">
             Fale comigo!
@@ -41,7 +44,7 @@ const Home = () => {
             </div>
           </Logo>
           <div>
-            {/* <Image src={fotoPerfil} alt="Foto - Marcone" /> */}
+            <Image src={fotoPerfil} alt="Foto - Marcone" />
             <PortfolioTag>
               <ImageQuadrado />
               <p>Atualmente trabalhando em projetos <span>Sociais.</span></p>

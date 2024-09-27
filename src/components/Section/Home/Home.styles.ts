@@ -70,8 +70,9 @@ export const Logo = styled.div`
   flex-direction: row;
   gap: 0.625rem;
   transform: translateY(0px);
-  transform: translateX(50px);
+  transform: translateX(80px);
   
+
   .retanguloInferior {
     border: 1px solid ${secondaryColor};
     width: 5rem;
@@ -135,15 +136,19 @@ export const Logo = styled.div`
 
 // Componente Title
 export const Title = styled.h1`
+  
   font-size: 2rem;
   font-weight: bold;
   text-align: left;
   margin: 0;
   padding: 0;
   text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
+  line-height: 1.3; /* Ajusta o espaçamento entre as linhas */
   
   span {
     color: ${secondaryColor};
+    display: inline; /* Quebra cada span em uma linha separada */
+    
   }
 `;
 
@@ -186,8 +191,6 @@ export const Image = styled.img`
   height: auto;
   margin-top: 3.125rem;
   margin-left: 2.8rem;
-
- 
 `;
 
 // Componente ImageQuadrado
