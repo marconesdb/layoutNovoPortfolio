@@ -102,7 +102,6 @@ export const Main = styled.main`
     width: 100%; /* Garante que o conteúdo não ultrapasse */
     flex-grow: 0; /* Permite que as seções cresçam, mas sem gerar overflow */
     flex-shrink: 0; /* Mantém o tamanho mínimo */
-   
     
   }
 `;
