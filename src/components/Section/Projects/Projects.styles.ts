@@ -1,4 +1,4 @@
-// Home.styles.tsx
+
 import styled from "styled-components";
 
 const primaryColor = "#2c3036"; 
