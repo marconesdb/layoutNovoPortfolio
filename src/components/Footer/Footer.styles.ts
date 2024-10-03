@@ -17,14 +17,6 @@ export const FooterContent = styled.div`
   flex-wrap: wrap; /* Permite que os itens se reorganizem */
   margin-top: 40px;
 
-  @media (min-width: 360px) and (max-width: 768px) {
-    flex-direction: column; /* Alinha os itens verticalmente em telas menores */
-  }
-
-  @media (min-width: 1640px) {
-      padding-left: 15px;
-      padding-right: 15px;
-      }
 `;
 
 // Seção da esquerda
@@ -33,12 +25,6 @@ export const LeftSection = styled.div`
   flex-direction: column;
   align-items: flex-start;
 
-  @media (min-width: 360px) and (max-width: 768px){
-    
-    align-items: center;
-    margin-bottom: 20px;
-
-  }
   
 `;
 
@@ -47,12 +33,6 @@ export const LeftSectionContent = styled.div`
   display: flex;
   align-items: center;
 
-  @media (min-width: 360px) and (max-width: 768px){
-    
-  flex-direction: column;
-  align-items: center;
-
-  }
   
 `;
 
@@ -72,13 +52,6 @@ export const FirstParagraph = styled.p`
   margin-left: -25px;
   margin-top: -110px;
 
-  @media (min-width: 360px) and (max-width: 768px){
-    
-    margin-left: 0;
-    margin-top: 1px;
-    text-align: center;
-
-    }
 `;
 
 // Estilo para o segundo parágrafo
@@ -89,14 +62,6 @@ export const SecondParagraph = styled.p`
   color: #ABB2BF;
   margin-top: -110px;
 
-  @media (min-width: 360px) and (max-width: 768px){
-    
-    /* margin-left: -3px; */
-    margin-right: 4px;
-    margin-top: 1px;
-    text-align: center;
-  
-    }
 `;
 
 // Estilo para o terceiro parágrafo
@@ -106,13 +71,6 @@ export const ThirdParagraph = styled.p`
   margin-left: 5px;
   font-size: 16px;
 
-  @media (min-width: 360px) and (max-width: 768px){
-    
-    text-align: center;
-    margin-top: 10px;
-    margin-left: 0;
-  
-    }
 `;
 
 // Estilo para o parágrafo central
@@ -120,13 +78,6 @@ export const CentralParagraph = styled.p`
   font-size: 16px;
   color: #ABB2BF;
   
-
-  @media (min-width: 360px) and (max-width: 768px){
-    
-    text-align: center;
-    margin-bottom: 10px;
-  
-    }
 `;
 
 // Estilo para o parágrafo das redes sociais
@@ -136,16 +87,6 @@ export const ParagraphSocialNetworks = styled.p`
   margin-right: 25px;
   margin-top: -60px;
 
-  @media (min-width: 360px) and (max-width: 768px){
-    text-align: center;
-    margin-top: 10px;
-  
-    }
-
-    @media (min-width: 992px) and (max-width: 1280px) {
-    margin-left: 30px;
-   
-  }
 `;
 
 // Seção da direita
@@ -164,12 +105,6 @@ export const LogoImage = styled.img`
   margin-left: -30px;
   margin-top: -110px;
 
-  @media (min-width: 360px) and (max-width: 768px){
-    margin-left: 0;
-    margin-top: 0;
-    
-  
-    }
 `;
 
 // Contêiner de Imagens na direita
@@ -178,12 +113,6 @@ export const ImagesContainer = styled.div`
   justify-content: space-between;
   margin-top: 10px;
 
-  @media (min-width: 360px) and (max-width: 768px){
-    justify-content: center;
-    width: 100%;
-    margin-top: 15px;
-  
-    }
 `;
 
 // Seção central
@@ -196,12 +125,6 @@ export const CenterSection = styled.div`
   position: absolute;
   margin-top: 50px;
   
-  @media (min-width: 360px) and (max-width: 768px){
-    position: static;
-    bottom: 0;
-    margin-top: 15px;
-  
-    }
 `;
 
 // Contêiner da Imagem
@@ -210,8 +133,4 @@ export const ImageContainer = styled.div`
   align-items: center;
   margin-right: 10px;
 
-  @media (min-width: 360px) and (max-width: 768px){
-    margin-right: 0;
-  
-    }
 `;
