@@ -31,7 +31,7 @@ export const CuboDireito= styled.div`
     gap: 5px; /* Espaço entre os círculos */
     margin-left: 175px;
     margin-top: 40px;
-    transform: translateY(3850px);
+    transform: translateY(3250px);
 
   }
 

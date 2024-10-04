@@ -1,51 +1,45 @@
 import styled from 'styled-components';
 
-// Estiliza o contêiner principal da Sidebar
-export const SidebarLeft = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+export const ContainerSidebarLeft = styled.div`
   position: relative;
-`;
-
-// Estiliza o contêiner central que agrupa VerticalLine e ImageContainer
-export const CentralContainer = styled.div`
+  height: 100vh;
+  width: 100%;
+  background-color: #282C33;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
 `;
 
-// Estiliza o traço vertical
+
+export const SidebarLeft = styled.div`
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #282C33;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+`;
+
 export const VerticalLine = styled.div`
-
-  width: 1px; /* Largura do traço */
-  height: 10cm; /* Altura do traço */
-  background-color: #fff; /* Cor do traço */
-  margin-bottom: 20px; /* Espaço entre o traço e as imagens */
-  transform: translateY(-2550px);
-  gap: 10px; /* Espaço entre as imagens */
- 
+  width: 1px;
+  height: 10cm;
+  background-color: #fff;
+  margin-bottom: 20px;
+  transform: translateY(-2150px);
 `;
 
-// Contêiner para as imagens
 export const ImageContainer = styled.div`
   display: flex;
-  flex-direction: column; /* Alinha as imagens verticalmente */
+  flex-direction: column;
   align-items: center;
-  gap: 10px; /* Espaço entre as imagens */
-  transform: translateY(-2250px);
-  
+  gap: 10px;
+  transform: translateY(-2150px);
 `;
 
-// Estiliza o retângulo inferior esquerdo
 export const RetanguloEsquerdoInferior = styled.div`
   width: 100px;
   height: 180px;
@@ -54,6 +48,7 @@ export const RetanguloEsquerdoInferior = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
+  transform: translateY(500px);
 
   @media (min-width: 1640px) {
     height: 200px;
@@ -61,7 +56,6 @@ export const RetanguloEsquerdoInferior = styled.div`
   }
 `;
 
-// Estiliza os cubos
 export const Cubo = styled.div`
   position: absolute;
   left: 0;
@@ -77,10 +71,12 @@ export const Cubo = styled.div`
 
   .cubo1 {
     top: 20px;
+    transform: translateY(-360px);
   }
 
   .cubo2 {
     top: 120px;
+    transform: translateY(820px);
   }
 
   .dot {

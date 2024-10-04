@@ -241,7 +241,8 @@ export const SkillsContainer = styled.div`
   .p-1{
     color: white;
     border-bottom: solid 1px #ABB2BF;
-    width: 149px;
+    /* width: 149px; */
+    width: 100%;
     margin-right: 35px;
     font-weight: 500;
     font-size: 16px;
@@ -276,7 +277,8 @@ export const SkillsContainer = styled.div`
 .p-2{
     color: white;
     border-bottom: solid 1px #ABB2BF;
-    width: 179px;
+    /* width: 179px; */
+    width: 100%;
     margin-right: 35px;
     font-weight: 500;
     font-size: 16px;
@@ -311,7 +313,8 @@ export const SkillsContainer = styled.div`
 
 .p-3{
     border-bottom: solid 1px #ABB2BF;
-    width: 179px;
+    /* width: 179px; */
+    width: 100%;
     margin-right: 35px;
     font-weight: 500;
     font-size: 16px;
@@ -339,7 +342,8 @@ export const SkillsContainer = styled.div`
 
 .p-4{
     border-bottom: solid 1px #ABB2BF;
-    width: 189px;
+    /* width: 189px; */
+    width: 100%;
     margin-right: 35px;
     font-weight: 500;
     font-size: 16px;
@@ -368,7 +372,8 @@ export const SkillsContainer = styled.div`
  
   .p-5{
     border-bottom: solid 1px #ABB2BF;
-    width: 189px;
+    /* width: 189px; */
+    width: 100%;
     margin-right: 35px;
     font-weight: 500;
     font-size: 16px;
