@@ -11,12 +11,17 @@ export const FooterContent = styled.div`
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  max-width: 1020px; /* Limita a largura máxima do footer */
+  max-width: 69%; /* Limita a largura máxima do footer */
   height: 200px; /* Ajusta a altura automaticamente */
   padding: 15px; /* Alinha o padding */
   flex-wrap: wrap; /* Permite que os itens se reorganizem */
   margin-top: 40px;
 
+
+
+  @media (min-width: 1400px) {
+    max-width: 75.2%; /* Limita a largura máxima do footer */  
+  }
 `;
 
 // Seção da esquerda

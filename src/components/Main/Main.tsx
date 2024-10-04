@@ -4,6 +4,8 @@ import Citacao from '../Section/Citacao/Citacao'
 import Projects from '../Section/Projects/Projects';
 import Skills from '../Section/Skills/Skills';
 import About from '../Section/About/About';
+import Contact from '../Section/Contact/Contact';
+import Formulario from '../Section/Formulario/Formulario';
 
 function Main() {
   return (
@@ -13,8 +15,8 @@ function Main() {
      <Projects/>
       <Skills/>
       <About/>
-       {/* <Contact/>
-     <Formulario/> */}
+    <Contact/>
+      <Formulario/>
     </S.Main>
   );
 }
