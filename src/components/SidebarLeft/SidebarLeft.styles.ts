@@ -15,6 +15,7 @@ export const CentralContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,24 +25,24 @@ export const CentralContainer = styled.div`
 
 // Estiliza o traço vertical
 export const VerticalLine = styled.div`
-  width: 1px;
-  height: 10cm;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-100%);
-  margin-right:5px;
+
+  width: 1px; /* Largura do traço */
+  height: 10cm; /* Altura do traço */
+  background-color: #fff; /* Cor do traço */
+  margin-bottom: 20px; /* Espaço entre o traço e as imagens */
+  transform: translateY(-2550px);
+  gap: 10px; /* Espaço entre as imagens */
+ 
 `;
 
 // Contêiner para as imagens
 export const ImageContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: column; /* Alinha as imagens verticalmente */
   align-items: center;
-  position: absolute;
-  bottom: 20px; // Ajuste conforme necessário
-  transform: translateY(-100%);
+  gap: 10px; /* Espaço entre as imagens */
+  transform: translateY(-2250px);
+  
 `;
 
 // Estiliza o retângulo inferior esquerdo

@@ -60,26 +60,43 @@ const Skills = () => {
         </div>
       
         <SkillsContainer>
-        <div className='Skill-1'>
+        <div className='Container'>
+
+      <div className="Container Content">
+        {/* <!-- Coluna 1 --> */}
+        <div className="coluna coluna1">
+            <div className="Skills-1">
             <p className='p-1'>Linguagens</p>
             <p className='p-texto'>TypeScript, JavaScript</p>
-          </div>
-          <div className='Skill-2'>
+            </div>
+        </div>
+
+        {/* <!-- Coluna 2 --> */}
+        <div className="coluna coluna2">
+            <div className="Skills-2">
             <p className='p-2'>Databases</p>
             <p className='p-texto'>MySQL, PostgreSQL</p>
-          </div>
-          <div className='Skill-3'>
+            </div>
+            <div className="Skills-3">
             <p className='p-3'>Outros</p>
             <p className='p-texto'>HTML, CSS, EJS, SCSS</p>
-          </div>
-          <div className='Skill-4'>
+            </div>
+        </div>
+
+        {/* <!-- Coluna 3 --> */}
+        <div className="coluna coluna3">
+            <div className="Skills-4">
             <p className='p-4'>Ferramentas</p>
             <p className='p-texto'>VSCode, Insomnia, Figma, Font Awesome</p>
-          </div>
-          <div className='Skill-5'>
+            </div>
+            <div className="Skills-5">
             <p className='p-5'>Frameworks</p>
             <p className='p-texto'>Tailwind.CSS, Bootstrap, React.JS</p>
-          </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
         </SkillsContainer>
       </MainContainer>
       </ContentWrapper>

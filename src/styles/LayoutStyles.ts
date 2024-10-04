@@ -63,10 +63,10 @@ export const Header = styled.header`
 export const SidebarLeft = styled.aside`
   grid-area: sidebar-left;
   background-color: #282C33; 
-  /* color: white; */
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 
   @media (max-width: 576px) {
     display: none;
@@ -76,10 +76,8 @@ export const SidebarLeft = styled.aside`
 export const SidebarRight = styled.aside`
   grid-area: sidebar-right;
   background-color: #282C33;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  width: 100%;
+  
   @media (max-width: 576px) {
     display: none;
   }

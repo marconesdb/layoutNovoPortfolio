@@ -80,7 +80,7 @@ export const ImagensSuperiorContainer = styled.div`
   justify-content: space-between;
   margin-bottom: 20px;
   margin-top: 125px;
-  
+  margin-left: 10px;
  
 
   img {
@@ -113,7 +113,7 @@ export const ImagensSuperiorContainer = styled.div`
     height: 110px;
     margin-right: 50px;
     transform: translateY(-10px);
-    transform: translateX(-10px);
+    transform: translateX(0px);
   }
 
 
@@ -161,10 +161,10 @@ export const IconeLogo = styled.div`
   display: flex; /* Flexbox para alinhar os retângulos lado a lado */
   flex-direction: row; /* Direção da flexbox em linha para alinhar os elementos horizontalmente */
   gap: 10px; /* Espaço entre os retângulos, ajuste conforme necessário */
-  margin-right: 20px;
+  margin-right: 0px;
   margin-top: -120px;
   /* margin-left: 15px; */
-
+  margin-left: 10px;
 
   .RetanguloInferior{
    border: solid 1px #A8990F;
@@ -205,128 +205,185 @@ export const IconeLogo = styled.div`
 
 export const SkillsContainer = styled.div`
 
-  gap: 10px; /* Espaço entre os itens */
-  width: 60%; /* Ajuste o tamanho do container */
-  max-width: 600px;
-  margin: auto; /* Centraliza o SkillsContainer em relação ao pai */
- 
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; /* Espaçamento entre skills e o container superior */
+  width: 100%; /* Ocupar 100% da largura do MainContainer */
   
-  .Skill-1 {
-    /* background-color: #2b2e33; */
-    color: white;
-    padding: 0px;
-    text-align: center;
-    border: solid 1px #ABB2BF;
-    width: 150px; 
-    height: 150px; 
-    margin-top: 160px;
 
+
+.Container{
+  display: flex;
+  justify-content: center;
+ }
+ .Container Content{
+  display: flex;
+  flex-wrap: wrap; /* Permite que as colunas quebrem linha se o espaço for insuficiente */
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
+ }
+
+
+ .coluna {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+/* Estilos para a primeira coluna */
+.coluna1 .Skills-1 {
+  border: solid 1px #ABB2BF;
+  width: 150px;
+  height: 100px;
   }
-
   .p-1{
     color: white;
     border-bottom: solid 1px #ABB2BF;
-    width: 148px;
+    width: 149px;
     margin-right: 35px;
     font-weight: 500;
     font-size: 16px;
-  }
-
-  .Skill-2 {
-    /* background-color: #2b2e33; */
-    color: white;
-    padding: 0px;
-    text-align: center;
-    border: solid 1px #ABB2BF;
-    width: 150px; 
-    height: 150px; 
-    transform: translateX(-195px);
-    transform: translateY(-150px);
-    margin-left: 170px;
-
-    
-  }
-
-  .p-2{
-    color: white;
-    border-bottom: solid 1px #ABB2BF;
-    width: 148px;
-    margin-right: 35px;
-    font-weight: 500;
-    font-size: 16px;
-  }
-
-
-  .Skill-3 {
-    /* background-color: #2b2e33; */
-    color: white;
-    padding: 0px;
-    text-align: center;
-    border: solid 1px #ABB2BF;
-    width: 210px; 
-    height: 210px; 
     align-items: center;
     justify-content: center;
-    transform: translateX(-195px);
-    transform: translateY(-300px);
-    margin-left: 340px;
-
-  }
-
-
-  .p-3{
-    border-bottom: solid 1px #ABB2BF;
-    width: 208px;
-    margin-right: 35px;
-    font-weight: 500;
-    font-size: 16px;
-  }
-
-  .Skill-4 {
-    /* background-color: #2b2e33; */
-    color: white;
-    padding: 0px;
     text-align: center;
-    border: solid 1px #ABB2BF;
-    width: 150px; 
-    height: 150px; 
-    transform: translateX(-195px);
-    transform: translateY(-340px);
-    margin-left: 170px;
-
-  }
-
-  .p-4{
-    border-bottom: solid 1px #ABB2BF;
-    width: 148px;
-    margin-right: 35px;
-    font-weight: 500;
-    font-size: 16px;
-
-  }
 
 
-  .Skill-5 {
-    /* background-color: #2b2e33; */
-    color: white;
-    padding: 0px;
+
+    @media (min-width: 1640px) {
+    width: 198px;
+    align-items: center;
     text-align: center;
-    border: solid 1px #ABB2BF;
-    width: 210px; 
-    height: 210px; 
-    transform: translateY(-430px);
-    margin-left: 340px;
-
+    justify-content: center;
     }
 
-  .p-5{
+    @media (min-width: 360px) and (max-width: 768px) {
+      width: 100%; 
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+
+    }
+  }
+/* Estilos para a segunda coluna */
+.coluna2 .Skills-2 {
+  border: solid 1px #ABB2BF;
+  width: 180px;
+  height: 120px;
+}
+
+.p-2{
+    color: white;
     border-bottom: solid 1px #ABB2BF;
-    width: 208px;
+    width: 179px;
     margin-right: 35px;
     font-weight: 500;
     font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
+
+
+    @media (min-width: 1640px) {
+    width: 238px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      width: 100%; 
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+.coluna2 .Skills-3 {
+  border: solid 1px #ABB2BF;
+  width: 180px;
+  height: 120px;
+  margin-top: 10px;
+}
+
+.p-3{
+    border-bottom: solid 1px #ABB2BF;
+    width: 179px;
+    margin-right: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    @media (min-width: 1640px) {
+    width: 268px;
+    
+    }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      width: 100%; 
+    }
+  }
+        /* Estilos para a terceira coluna */
+.coluna3 .Skills-4 {
+  border: solid 1px #ABB2BF;
+  width: 190px;
+  height: 180px;
+}
+
+.p-4{
+    border-bottom: solid 1px #ABB2BF;
+    width: 189px;
+    margin-right: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    
+    @media (min-width: 1640px) {
+    width: 238px;
+    }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      width: 100%; 
+      
+    }
+  }
+
+.coluna3 .Skills-5 {
+  border: solid 1px #ABB2BF;
+  width: 190px;
+  height: 180px;
+  margin-top: 10px;
+  }
+ 
+  .p-5{
+    border-bottom: solid 1px #ABB2BF;
+    width: 189px;
+    margin-right: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    @media (min-width: 1640px) {
+    width: 268px;
+    }
+
+    @media (min-width: 360px) and (max-width: 768px) {
+      width: 100%;  
+    }
   }
 
   .p-texto{
@@ -334,9 +391,11 @@ export const SkillsContainer = styled.div`
     font-size: 16px;
     padding: 10px;
 
-  }
 
-  
+    @media (min-width: 360px) and (max-width: 768px) {
+      margin-top: 30%;
+    }
+  }
 `;
 
 
