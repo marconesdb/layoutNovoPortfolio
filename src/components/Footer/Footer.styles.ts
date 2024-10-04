@@ -20,7 +20,7 @@ export const FooterContent = styled.div`
 
 
   @media (min-width: 1640px) {
-    max-width: 75.2%; /* Limita a largura máxima do footer */  
+    max-width: 75.3%; /* Limita a largura máxima do footer */  
   }
 `;
 

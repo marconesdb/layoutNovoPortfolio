@@ -98,7 +98,7 @@ export const Main = styled.main`
 
   section {
     padding: 20px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     width: 100%; /* Garante que o conteúdo não ultrapasse */
     flex-grow: 0; /* Permite que as seções cresçam, mas sem gerar overflow */
     flex-shrink: 0; /* Mantém o tamanho mínimo */
