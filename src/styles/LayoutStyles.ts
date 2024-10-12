@@ -13,25 +13,18 @@ export const Container = styled.div`
   overflow-y: auto; /* Controle da rolagem no Container */
   box-sizing: border-box;
 
-  @media (max-width: 576px) {
+  
+
+  @media (min-width: 360px) and  (max-width: 992px){
     grid-template-columns: 1fr;
     grid-template-areas:
       'header'
       'main'
       'footer';
+   
   }
 
-  @media (min-width: 360px) and  (max-width: 576px){
-    grid-template-columns: 1fr;
-  }
 
-  @media (min-width: 768px) {
-    grid-template-columns: 180px 1fr 180px;
-  }
-
-  @media (min-width: 992px) {
-    grid-template-columns: 200px 1fr 200px;
-  }
 
   @media (min-width: 1200px) {
     grid-template-columns: 220px 1fr 220px;
@@ -68,7 +61,7 @@ export const SidebarLeft = styled.aside`
   justify-content: center;
   width: 100%;
 
-  @media (max-width: 576px) {
+  @media (min-width: 360px) and (max-width: 992px) {
     display: none;
   }
 `;
@@ -78,7 +71,7 @@ export const SidebarRight = styled.aside`
   background-color: #282C33;
   width: 100%;
   
-  @media (max-width: 576px) {
+  @media (min-width: 360px) and (max-width: 992px) {
     display: none;
   }
 `;

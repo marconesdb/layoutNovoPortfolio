@@ -26,6 +26,10 @@ export const Container = styled.section`
   @media (min-width: 360px) and (max-width: 576px) {
     padding: 1rem; 
   }
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    padding: 1.5rem; /* Ajuste do padding */
+  }
 `;
 
 
@@ -46,6 +50,12 @@ export const ContentWrapper = styled.div`
     align-items: center; 
     padding: 0; 
   }
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    flex-direction: column; /* Muda para coluna em telas intermediárias */
+    align-items: center; /* Centraliza o conteúdo */
+    padding: 1rem; /* Ajusta o padding */
+  }
 `;
 
 
@@ -60,6 +70,11 @@ export const TextSection = styled.div`
   @media (min-width: 360px) and (max-width: 576px) {
     text-align: center; 
     margin-bottom: 1rem; 
+  }
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 1.5rem; /* Adiciona espaço inferior */
   }
 `;
 
@@ -78,6 +93,12 @@ export const ImageSection = styled.div`
     justify-content: center; 
     margin: 0; 
   }
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    flex-direction: column; /* Muda a direção para coluna */
+    margin-right: 0; /* Remove a margem */
+    align-items: center; /* Centraliza as imagens */
+  }
 `;
 
 // Componente Logo
@@ -92,6 +113,10 @@ export const Logo = styled.div`
   @media (min-width: 360px) and (max-width: 576px) {
     margin: 0 auto; 
     transform: translateX(15px);
+  }
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    transform: translateX(15px); /* Ajusta a posição do logo */
   }
 
   .retanguloInferior {
@@ -172,6 +197,11 @@ export const Title = styled.h1`
     text-align: center; 
   }
 
+  @media (min-width: 577px) and (max-width: 992px) {
+    font-size: 1.75rem; /* Ajusta o tamanho da fonte */
+    text-align: center; /* Centraliza o título */
+  }
+
   span {
     color: ${secondaryColor};
     display: inline; /* Quebra cada span em uma linha separada */
@@ -193,6 +223,11 @@ export const Subtitle = styled.p`
     font-size: 0.875rem; 
     text-align: center; 
     margin-top: 1rem; 
+  }
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+    text-align: center; /* Centraliza o subtítulo */
   }
 `;
 
@@ -220,6 +255,11 @@ export const ContactButton = styled.a`
     margin: 1rem auto; 
     text-align: center;
   }
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    width: 10rem; /* Ajusta a largura do botão */
+    margin: 1rem auto; /* Centraliza o botão */
+  }
 `;
 
 // Componente Image
@@ -234,6 +274,11 @@ export const Image = styled.img`
     transform: translateX(0); 
     margin: 0 auto; 
   }
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    width: 90%; /* Reduz a largura da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+  }
 `;
 
 // Componente ImageQuadrado
@@ -246,6 +291,11 @@ export const ImageQuadrado = styled.img`
   @media (min-width: 360px) and (max-width: 576px) {
     width: 1.5rem; 
     height: 1.5rem; 
+  }
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    width: 1.75rem; /* Ajusta o tamanho */
+    height: 1.75rem;
   }
 `;
 
@@ -270,6 +320,13 @@ export const PortfolioTag = styled.div`
     margin: 0 auto; 
     padding: 0.5rem; 
     margin-top: 25px;
+  }
+
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    width: 80%; /* Ajusta a largura */
+    margin: 1rem auto; /* Centraliza o componente */
+    padding: 0.5rem; /* Ajusta o padding */
   }
 
   span {
