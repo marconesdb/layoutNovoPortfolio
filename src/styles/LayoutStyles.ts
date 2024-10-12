@@ -21,8 +21,8 @@ export const Container = styled.div`
       'footer';
   }
 
-  @media (min-width: 576px) {
-    grid-template-columns: 150px 1fr 150px;
+  @media (min-width: 360px) and  (max-width: 576px){
+    grid-template-columns: 1fr;
   }
 
   @media (min-width: 768px) {

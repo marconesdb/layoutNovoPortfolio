@@ -20,9 +20,12 @@ export const Container = styled.section`
   width: 100%;  /* Ocupar 100% da largura do Main */
   max-width: 100%; /* Limitar a largura máxima para prevenir overflow */
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
-  height: auto; /* Permitir crescimento vertical */
   overflow-x: hidden; /* Prevenir rolagem horizontal no container */
-  height: 85vh;
+ 
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    padding: 1rem; 
+  }
 `;
 
 
@@ -37,6 +40,12 @@ export const ContentWrapper = styled.div`
   max-width: 1200px; /* Limite de largura máxima */
   flex-wrap: wrap; /* Permitir quebra de linha se necessário */
   box-sizing: border-box; /* Previne overflow horizontal com padding */
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 0; 
+  }
 `;
 
 
@@ -47,6 +56,11 @@ export const TextSection = styled.div`
   text-align: left;
   margin: 0;
   padding: 0; 
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    text-align: center; 
+    margin-bottom: 1rem; 
+  }
 `;
 
 // Componente ImageSection
@@ -58,7 +72,12 @@ export const ImageSection = styled.div`
   padding: 0;
   margin-right: -5rem; // Ajuste com rem
 
-  
+  @media (min-width: 360px) and (max-width: 576px) {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0; 
+  }
 `;
 
 // Componente Logo
@@ -69,6 +88,11 @@ export const Logo = styled.div`
   transform: translateY(0px);
   transform: translateX(80px);
   
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    margin: 0 auto; 
+    transform: translateX(15px);
+  }
 
   .retanguloInferior {
     border: 1px solid ${secondaryColor};
@@ -142,6 +166,12 @@ export const Title = styled.h1`
   text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
   line-height: 1.3; /* Ajusta o espaçamento entre as linhas */
   
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    font-size: 1.5rem; 
+    text-align: center; 
+  }
+
   span {
     color: ${secondaryColor};
     display: inline; /* Quebra cada span em uma linha separada */
@@ -158,6 +188,12 @@ export const Subtitle = styled.p`
   color: ${lightTextColor};
   margin-top: 2rem;
 
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    font-size: 0.875rem; 
+    text-align: center; 
+    margin-top: 1rem; 
+  }
 `;
 
 // Componente ContactButton
@@ -179,7 +215,11 @@ export const ContactButton = styled.a`
     color: ${textColor};
   }
 
-
+  @media (min-width: 360px) and (max-width: 576px) {
+    width: 80%; 
+    margin: 1rem auto; 
+    text-align: center;
+  }
 `;
 
 // Componente Image
@@ -188,6 +228,12 @@ export const Image = styled.img`
   height: auto;
   margin-top: 3.125rem;
   margin-left: 2.8rem;
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    width: 100%;
+    transform: translateX(0); 
+    margin: 0 auto; 
+  }
 `;
 
 // Componente ImageQuadrado
@@ -196,6 +242,11 @@ export const ImageQuadrado = styled.img`
   height: 2.1875rem;
   margin-right: 0.625rem;
   background-color: ${secondaryColor};
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    width: 1.5rem; 
+    height: 1.5rem; 
+  }
 `;
 
 // Componente PortfolioTag
@@ -203,6 +254,7 @@ export const PortfolioTag = styled.div`
   display: flex;
   align-items: center;
   font-size: 1rem;
+  justify-content: center; /* Centraliza o conteúdo */
   color: ${lightTextColor};
   margin: 0;
   /* padding: 0; */
@@ -211,8 +263,14 @@ export const PortfolioTag = styled.div`
   width: 25rem;
   padding: 0.3125rem;
   margin-right: 4.9rem;
+  box-sizing: border-box; /* Inclui padding e borda na largura total */
 
-  
+  @media (min-width: 360px) and (max-width: 576px) {
+    width: calc(100% - 2rem); 
+    margin: 0 auto; 
+    padding: 0.5rem; 
+    margin-top: 25px;
+  }
 
   span {
     color: ${textColor};
@@ -220,8 +278,9 @@ export const PortfolioTag = styled.div`
   }
 
   p {
-    margin-right: -2.1875rem;
-
-    
+    margin-right: 0;
+ 
   }
+
+
 `;
