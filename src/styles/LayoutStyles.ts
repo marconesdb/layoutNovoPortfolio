@@ -43,6 +43,15 @@ export const Container = styled.div`
       'sidebar-left main sidebar-right'
       'footer footer footer';
   }
+
+
+  @media (min-width: 1400px) { /* Media query para 1201px a 1400px */
+    grid-template-columns: 200px 1fr 200px; /* Ajuste nas colunas */
+    grid-template-areas:
+      'sidebar-left header sidebar-right'
+      'sidebar-left main sidebar-right'
+      'footer footer footer';
+  }
 `;
 
 export const Header = styled.header`

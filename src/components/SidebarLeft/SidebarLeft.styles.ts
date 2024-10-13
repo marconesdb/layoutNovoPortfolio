@@ -36,6 +36,13 @@ export const VerticalLine = styled.div`
   @media (min-width:1201px) and (max-width:1400px) {
     margin-top: -65px;
   }
+
+
+  @media (min-width: 1401px) { 
+    margin-top: -100px;
+  }
+
+
 `;
 
 export const ImageContainer = styled.div`
