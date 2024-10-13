@@ -15,6 +15,7 @@ export const Container = styled.section`
   max-width: 100%; /* Limitar a largura máxima para prevenir overflow */
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
   background-color: ${primaryColor};
+
 `;
 
 
@@ -36,6 +37,13 @@ export const ContentWrapper = styled.div`
     justify-content: flex-start;
     padding: 1rem; /* Reduz o padding para telas menores */
   }
+
+  @media (min-width: 769px) and (max-width: 1200px) {
+  justify-content: space-between; /* Espaço entre os elementos */
+  padding: 2rem; /* Ajuste de padding */
+ 
+  }
+
 `;
 
 
@@ -53,6 +61,14 @@ export const Title = styled.div`
     width: 80%;
   }
 
+  @media (min-width: 769px) and (max-width: 1200px) {
+  width: 90%;
+  p {
+    font-size: 28px; /* Ajuste no tamanho da fonte */
+  }
+}
+
+
   
   span {
     color: #A8990F; /* Cor amarela */
@@ -61,20 +77,9 @@ export const Title = styled.div`
     font-size: 32px;
   }
 
-  @media (min-width: 360px) and (max-width: 768px) {
-    width: 90%; /* Ajusta a largura para dispositivos pequenos */
-    p {
-      font-size: 22px; /* Reduz o tamanho da fonte */
-    }
-  }
+  
 
-
-  /* Responsividade */
-  @media (min-width: 360px) and (max-width: 768px) {
-    p {
-      font-size: 24px;
-    }
-  }
+  
 `;
 
 export const Line = styled.div`
@@ -89,6 +94,12 @@ export const Line = styled.div`
     width: 100%; /* Ajusta a largura para dispositivos pequenos */
     margin-left: 0; /* Remove a margem para centralização */
   }
+
+  @media (min-width: 769px) and (max-width: 1200px) {
+  width: 80%; /* Ajusta a largura da linha */
+  margin-left: 0; /* Centraliza a linha */
+}
+
 `;
 
 export const Cards = styled.div`
@@ -101,6 +112,29 @@ export const Cards = styled.div`
     grid-template-columns: repeat(1, 1fr); /* Um cartão por linha */
     gap: 10px; /* Reduz o espaço entre os cartões */
   }
+
+  
+    @media (min-width: 769px) and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
+    gap: 35px; /* Espaçamento ajustado */
+    justify-content: center; /* Centraliza os cartões dentro da grid */
+    justify-items: center; /* Centraliza os itens dentro de cada célula da grid */
+    width: 100%; /* Garante que a grid ocupe toda a largura disponível */
+    margin: 0 auto; /* Centraliza a grid dentro do container */
+    margin-top: 50px;
+}
+
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    grid-template-columns: repeat(3, 1fr); /* Ajusta para 2 colunas */
+    gap: 35px; /* Espaçamento ajustado */
+    justify-content: center; /* Centraliza os cartões dentro da grid */
+    justify-items: center; /* Centraliza os itens dentro de cada célula da grid */
+    width: 100%; /* Garante que a grid ocupe toda a largura disponível */
+    margin: 0 auto; /* Centraliza a grid dentro do container */
+    margin-top: 50px;
+}
+
 `;
 
 export const Card = styled.div`
@@ -119,6 +153,11 @@ export const Card = styled.div`
     width: 100%; 
     height: auto; 
   }
+
+  @media (min-width: 769px) and (max-width: 1200px) {
+ 
+}
+
 `;
 
 export const CardImage = styled.img`
@@ -130,6 +169,11 @@ export const CardImage = styled.img`
   @media (min-width: 360px) and (max-width: 768px) {
     height: 150px; 
   }
+
+  @media (min-width: 769px) and (max-width: 1200px) {
+  
+}
+
 `;
 
 export const CardTitle = styled.h3`
@@ -145,6 +189,11 @@ export const CardTitle = styled.h3`
     width: 100%; 
     font-size: 18px; 
   }
+
+  @media (min-width: 769px) and (max-width: 1200px) {
+  
+}
+
 `;
 
 export const CardSubtitle = styled.h3`
@@ -212,4 +261,9 @@ export const CardButtons = styled.div`
     justify-content: center; 
     align-items: center; 
   }
+
+  @media (min-width: 769px) and (max-width: 1200px) {
+ 
+}
+
 `;
