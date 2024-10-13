@@ -30,6 +30,12 @@ export const ContentWrapper = styled.div`
   flex-wrap: wrap; /* Permitir quebra de linha se necessário */
   box-sizing: border-box; /* Previne overflow horizontal com padding */
 
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    justify-content: flex-start;
+    padding: 1rem; /* Reduz o padding para telas menores */
+  }
 `;
 
 
@@ -47,11 +53,19 @@ export const Title = styled.div`
     width: 80%;
   }
 
+  
   span {
     color: #A8990F; /* Cor amarela */
   }
   p{
     font-size: 32px;
+  }
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    width: 90%; /* Ajusta a largura para dispositivos pequenos */
+    p {
+      font-size: 22px; /* Reduz o tamanho da fonte */
+    }
   }
 
 
@@ -69,12 +83,12 @@ export const Line = styled.div`
   background-color: #A8990F;
   margin-left: 10px;
 
-  /* Responsividade */
+ 
+
   @media (min-width: 360px) and (max-width: 768px) {
-    
+    width: 100%; /* Ajusta a largura para dispositivos pequenos */
+    margin-left: 0; /* Remove a margem para centralização */
   }
-
-
 `;
 
 export const Cards = styled.div`
@@ -83,10 +97,9 @@ export const Cards = styled.div`
   gap: 20px;
   margin-top: 50px;
 
-  /* Responsividade */
   @media (min-width: 360px) and (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr); /* Um cartão por linha */
-    gap: 15px; /* Reduz o espaço entre os cartões */
+    gap: 10px; /* Reduz o espaço entre os cartões */
   }
 `;
 
@@ -102,10 +115,9 @@ export const Card = styled.div`
   justify-content: space-between;
   border: solid 1px #ABB2BF;
 
-  /* Responsividade */
   @media (min-width: 360px) and (max-width: 768px) {
-    width: 100%; /* Ajusta a largura para 100% em telas menores */
-    height: auto; /* Permite que a altura se ajuste dinamicamente */
+    width: 100%; 
+    height: auto; 
   }
 `;
 
@@ -115,9 +127,8 @@ export const CardImage = styled.img`
   object-fit: contain;
 
 
-  /* Responsividade */
   @media (min-width: 360px) and (max-width: 768px) {
-    height: 150px; /* Reduz a altura da imagem em dispositivos menores */
+    height: 150px; 
   }
 `;
 
@@ -130,10 +141,9 @@ export const CardTitle = styled.h3`
   padding: 10px;
 
 
-  /* Responsividade */
   @media (min-width: 360px) and (max-width: 768px) {
-    width: 100%; /* Ajusta a largura para 100% */
-    font-size: 20px; /* Reduz o tamanho da fonte */
+    width: 100%; 
+    font-size: 18px; 
   }
 `;
 
@@ -146,9 +156,8 @@ export const CardSubtitle = styled.h3`
   padding: 10px;
   border: solid 1px #ABB2BF;
 
-  /* Responsividade */
   @media (min-width: 360px) and (max-width: 768px) {
-    width: 100%; /* Ajusta a largura para 100% */
+    width: 100%; 
   }
 `;
 
@@ -160,9 +169,8 @@ export const CardText = styled.p`
   flex: 1;
   margin-bottom: 15px;
 
-  /* Responsividade */
   @media (min-width: 360px) and (max-width: 768px) {
-    font-size: 12px; /* Reduz o tamanho da fonte */
+    font-size: 12px; 
   }
 `;
 
@@ -198,11 +206,10 @@ export const CardButtons = styled.div`
     }
   }
 
-  /* Responsividade */
   @media (min-width: 360px) and (max-width: 768px) {
-    flex-direction: column; /* Empilha os botões verticalmente */
-    gap: 10px; /* Reduz o espaçamento entre os botões */
-    justify-content: center; /* Centraliza os botões horizontalmente */
-    align-items: center; /* Centraliza os botões verticalmente */
+    flex-direction: column; 
+    gap: 10px; 
+    justify-content: center; 
+    align-items: center; 
   }
 `;

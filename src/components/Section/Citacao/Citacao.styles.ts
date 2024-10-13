@@ -13,10 +13,11 @@ export const Container = styled.section`
   margin-top: 0;
   width: 100%;  /* Ocupar 100% da largura do Main */
   max-width: 100%; /* Limitar a largura máxima para prevenir overflow */
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
   overflow-x: hidden; /* Prevenir rolagem horizontal no container */
   background-color: ${primaryColor};
+
 `;
 
 
@@ -31,7 +32,11 @@ export const ContentWrapper = styled.div`
   max-width: 1200px; /* Limite de largura máxima */
   flex-wrap: wrap; /* Permitir quebra de linha se necessário */
   box-sizing: border-box; /* Previne overflow horizontal com padding */
+  
 
+  @media (min-width: 360px) and (max-width: 768px) {
+    margin-top: -300px;
+  }
 `;
 
 
