@@ -1,4 +1,4 @@
-
+// App.tsx
 import GlobalStyles from './styles/GlobalStyle';
 import Header from './components/Header/Header';
 import SidebarLeft from './components/SidebarLeft/SidebarLeft';

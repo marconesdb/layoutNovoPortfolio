@@ -8,7 +8,11 @@ export const SidebarRetanguloDireito= styled.div`
   border: solid 1px #ABB2BF;
   transform: translateY(965px);
   border-right: none;
-  margin-left: 59%;
+  margin-left: 29%;
+
+  @media (min-width: 1201px) and (max-width: 1400px) { 
+    margin-left: 65%;
+  }
 `;
 
 export const SidebarRetanguloDireitoInferior= styled.div`
@@ -18,8 +22,12 @@ export const SidebarRetanguloDireitoInferior= styled.div`
   right: 0; /* Posiciona à direita */
   top: 140px; /* Abaixo do primeiro retângulo */
   border-right: none;
-  margin-left: 59%;
+  margin-left: 39%;
   transform: translateY(1700px);
+
+  @media (min-width: 1201px) and (max-width: 1400px) { 
+    margin-left: 65%;
+  }
 `;
 
 
@@ -29,9 +37,13 @@ export const CuboDireito= styled.div`
     grid-template-columns: repeat(4, 15px); /* 5 colunas de 30px */
     grid-template-rows: repeat(5, 15px);    /* 5 linhas de 30px */
     gap: 5px; /* Espaço entre os círculos */
-    margin-left: 175px;
+    margin-left: 75px;
     margin-top: 40px;
     transform: translateY(3250px);
+
+    @media (min-width: 1201px) and (max-width: 1400px) { 
+    margin-left: 75%;
+  }
 
   }
 

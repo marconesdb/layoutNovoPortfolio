@@ -9,6 +9,8 @@ export const ContainerSidebarLeft = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  
 `;
 
 
@@ -28,8 +30,12 @@ export const VerticalLine = styled.div`
   width: 1px;
   height: 10cm;
   background-color: #fff;
-  margin-bottom: 20px;
-  transform: translateY(-2150px);
+  /* margin-bottom: 20px; */
+  /* transform: translateY(-2150px); */
+
+  @media (min-width:1201px) and (max-width:1400px) {
+    margin-top: -65px;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -37,7 +43,7 @@ export const ImageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  transform: translateY(-2150px);
+  /* transform: translateY(-2150px); */
 `;
 
 export const RetanguloEsquerdoInferior = styled.div`

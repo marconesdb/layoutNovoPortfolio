@@ -24,14 +24,24 @@ export const Container = styled.div`
    
   }
 
-
-
-  @media (min-width: 1200px) {
-    grid-template-columns: 220px 1fr 220px;
+  
+  @media (min-width: 993px) and  (max-width: 1200px){
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'main'
+      'footer';
+   
   }
 
-  @media (min-width: 1400px) {
-    grid-template-columns: 250px 1fr 250px;
+
+
+  @media (min-width: 1201px) and (max-width: 1400px) { /* Media query para 1201px a 1400px */
+    grid-template-columns: 150px 1fr 150px; /* Ajuste nas colunas */
+    grid-template-areas:
+      'sidebar-left header sidebar-right'
+      'sidebar-left main sidebar-right'
+      'footer footer footer';
   }
 `;
 
@@ -61,9 +71,10 @@ export const SidebarLeft = styled.aside`
   justify-content: center;
   width: 100%;
 
-  @media (min-width: 360px) and (max-width: 992px) {
+  @media (min-width: 360px) and (max-width: 1200px) {
     display: none;
   }
+
 `;
 
 export const SidebarRight = styled.aside`
@@ -71,8 +82,12 @@ export const SidebarRight = styled.aside`
   background-color: #282C33;
   width: 100%;
   
-  @media (min-width: 360px) and (max-width: 992px) {
+  @media (min-width: 360px) and (max-width: 1200px) {
     display: none;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) { 
+    width: 50%;
   }
 `;
 
