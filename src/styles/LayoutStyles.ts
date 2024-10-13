@@ -45,7 +45,7 @@ export const Container = styled.div`
   }
 
 
-  @media (min-width: 1400px) { /* Media query para 1201px a 1400px */
+  @media (min-width: 1401px) { /* Media query para 1201px a 1400px */
     grid-template-columns: 200px 1fr 200px; /* Ajuste nas colunas */
     grid-template-areas:
       'sidebar-left header sidebar-right'
