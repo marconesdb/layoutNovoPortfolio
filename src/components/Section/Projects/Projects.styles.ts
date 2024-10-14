@@ -107,12 +107,13 @@ export const Line = styled.div`
   width: 600px;
   background-color: #A8990F;
   margin-left: 10px;
-  flex-grow: 1; /* Faz com que a linha se expanda para ocupar o espaço restante */
+  
  
 
   @media (min-width: 360px) and (max-width: 768px) {
     width: 30%; /* Ajusta a largura para dispositivos pequenos */
     margin-left: 25px; /* Remove a margem para centralização */
+    flex-grow: 1; /* Faz com que a linha se expanda para ocupar o espaço restante */
   }
 
   @media (min-width: 769px) and (max-width: 1200px) {

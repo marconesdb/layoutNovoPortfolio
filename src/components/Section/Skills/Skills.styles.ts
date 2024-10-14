@@ -60,7 +60,7 @@ export const Title = styled.div`
     font-size: 32px;
   }
 
-  @media (min-width: 360px) and (max-width: 768px) {
+  @media (min-width: 360px) and (max-width: 1200px) {
     width: 100%;
     margin-top: 70px;
   
@@ -70,6 +70,8 @@ export const Title = styled.div`
       font-size: 28px;
     }
   }
+
+
 `;
 
 export const Line = styled.div`
@@ -77,11 +79,19 @@ export const Line = styled.div`
   width: 280px;
   background-color: #A8990F;
   margin-left: 10px;
-  flex-grow: 1; /* Faz com que a linha se expanda para ocupar o espaço restante */
+  
  /* Responsividade */
- @media (min-width: 360px) and (max-width: 768px) {
+ @media (min-width: 360px) and (max-width: 992px) {
     width: 100%; 
     margin-left: 25px;
+    flex-grow: 1; /* Faz com que a linha se expanda para ocupar o espaço restante */
+    
+ }
+
+  /* Responsividade */
+  @media (min-width: 993px) and (max-width: 1200px) {
+   
+    flex-grow: 1; /* Faz com que a linha se expanda para ocupar o espaço restante */
     
  }
 `;
@@ -98,7 +108,7 @@ export const MainContainer = styled.div`
   
 
   /* Responsividade */
-  @media (min-width: 360px) and (max-width: 768px) {
+  @media (min-width: 360px) and (max-width: 992px) {
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
@@ -148,7 +158,7 @@ export const ImagensSuperiorContainer = styled.div`
   }
 
   /* Responsividade */
-  @media (min-width: 360px) and (max-width: 768px) {
+  @media (min-width: 360px) and (max-width: 992px) {
     justify-content: center;
     margin-top: 20px;
     margin-left: 45px;
@@ -208,7 +218,7 @@ export const ImagensInferiorContainer = styled.div`
 
 
   /* Responsividade */
-@media (min-width: 360px) and (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 992px) {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
@@ -273,13 +283,14 @@ export const IconeLogo = styled.div`
   }
 
   /* Responsividade */
-  @media (min-width: 360px) and (max-width: 768px) {
+  @media (min-width: 360px) and (max-width: 992px) {
     flex-direction: column;
     align-items: center;
     margin-top: -50px;
     gap: 5px;
   }
 `;
+
 
 export const SkillsContainer = styled.div`
 
@@ -290,22 +301,24 @@ export const SkillsContainer = styled.div`
   width: 100%; /* Ocupar 100% da largura do MainContainer */
   
 
-  @media (min-width: 360px) and (max-width: 768px) {
-    width: 100%; /* O container ocupa 100% da largura da tela */
-    margin-left: 0; /* Remove margem lateral */
-    transform: none; /* Remove qualquer transformação */
-    
-    display: flex;
-    flex-direction: column; /* Alinha em coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
-
-  }
+ 
 
 
 .Container{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Permitir que as colunas quebrem linha se necessário */
+
+  /* Para o media query de 360px a 768px */
+@media (min-width: 360px) and (max-width: 992px) {
+  .Container {
+    flex-direction: column; /* Mudando a direção para coluna em telas menores */
+    
+  }
+
  }
+}
+
  .Container Content{
   display: flex;
   flex-wrap: wrap; /* Permite que as colunas quebrem linha se o espaço for insuficiente */
@@ -321,17 +334,23 @@ export const SkillsContainer = styled.div`
   margin: 10px;
 }
 
+
+
 /* Estilos para a primeira coluna */
 .coluna1 .Skills-1 {
   border: solid 1px #ABB2BF;
   width: 150px;
   height: 100px;
 
-  @media (min-width: 360px) and (max-width: 768px) {
+  @media (min-width: 360px) and (max-width: 992px) {
     height: 410px; /* Altura fixa */
     width: 100%; /* Largura flexível */
-    margin-top: 150px; /* Espaço superior */
+    margin-top: 50px; /* Espaço superior */
        
+    }
+
+    @media (min-width: 993px) and (max-width: 1200px) {
+      width: 120px;
     }
   }
  
@@ -347,7 +366,7 @@ export const SkillsContainer = styled.div`
     justify-content: center;
     text-align: center;
     
-    @media (min-width: 360px) and (max-width: 768px) {
+    @media (min-width: 360px) and (max-width: 992px) {
       width: 100%; 
       align-items: center;
       text-align: center;
@@ -363,13 +382,17 @@ export const SkillsContainer = styled.div`
   width: 180px;
   height: 120px;
 
-  @media (min-width: 360px) and (max-width: 768px) {
+  @media (min-width: 360px) and (max-width: 992px) {
     
     margin-left: 0px;
     width: 100%; /* Largura flexível */
     height: 410px; /* Altura fixa */
-    margin-top: 250px; /* Espaço superior */
+    margin-top: 35px; /* Espaço superior */
     
+    }
+
+    @media (min-width: 993px) and (max-width: 1200px) {
+      width: 120px;
     }
 }
 
@@ -381,13 +404,17 @@ export const SkillsContainer = styled.div`
   height: 120px;
   margin-top: 10px;
 
-  @media (min-width: 360px) and (max-width: 768px) {
+  @media (min-width: 360px) and (max-width: 992px) {
    
    margin-left: 0px;
    width: 100%; /* Largura flexível */
    height: 410px; /* Altura fixa */
-   margin-top: 250px; /* Espaço superior */
+   margin-top: 50px; /* Espaço superior */
    }
+
+   @media (min-width: 993px) and (max-width: 1200px) {
+      width: 120px;
+    }
 }
 
 /* Estilos para a terceira coluna */
@@ -396,11 +423,11 @@ export const SkillsContainer = styled.div`
   width: 190px;
   height: 180px;
 
-  @media (min-width: 360px) and (max-width: 768px) {
+  @media (min-width: 360px) and (max-width: 992px) {
     margin-left: 0;
     width: 100%; /* Largura flexível */
     height: 410px;  /* Altura fixa */
-    margin-top: 165px; /* Espaço superior */
+    margin-top: 40px; /* Espaço superior */
     }
 }
 
@@ -411,10 +438,10 @@ export const SkillsContainer = styled.div`
   height: 180px;
   margin-top: 10px;
 
-  @media (min-width: 360px) and (max-width: 768px) {
+  @media (min-width: 360px) and (max-width: 992px) {
     width: 100%; /* Largura flexível */
     height: 410px;  /* Altura fixa */
-    margin-top: 200px; /* Espaço superior */
+    margin-top: 50px; /* Espaço superior */
     margin-left: 0;
   
     }
@@ -426,11 +453,15 @@ export const SkillsContainer = styled.div`
     font-size: 16px;
     padding: 10px;
 
-    @media (min-width: 360px) and (max-width: 768px) {
-      margin-top: 30%;
+    @media (min-width: 360px) and (max-width: 992px) {
+      margin-top: 170px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
+
+
+
+ 
 `;
-
-
-
