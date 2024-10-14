@@ -107,10 +107,12 @@ export const Line = styled.div`
 
  @media (min-width: 1201px) and (max-width: 1400px) {
   flex-grow: 1; /* Faz com que a linha se expanda para ocupar o espaço restante */
+  
     }
 
   @media (min-width: 1401px) {
   flex-grow: 1; /* Faz com que a linha se expanda para ocupar o espaço restante */
+ 
   }
 
 `;

@@ -56,6 +56,12 @@ export const ContentWrapper = styled.div`
     align-items: center; /* Centraliza o conteúdo */
     padding: 1rem; /* Ajusta o padding */
   }
+
+
+  
+  @media (min-width: 1401px){
+  margin-top: 150px;
+  }
 `;
 
 

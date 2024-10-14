@@ -81,12 +81,23 @@ export const Title = styled.div`
 
 
 @media (min-width: 1201px) and (max-width: 1400px) {
-    width: 85%; /* Ajuste da largura do título */
+    width: 100%; /* Ajuste da largura do título */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     p {
       font-size: 30px; /* Ajuste do tamanho da fonte */
     }
   }
 
+
+  @media (min-width:1401px) {
+    width: 100%; /* Ajuste da largura do título */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 
   
@@ -122,10 +133,15 @@ export const Line = styled.div`
 }
 
 @media (min-width: 1201px) and (max-width: 1400px) {
-    width: 85%; /* Ajuste da largura da linha */
+    width: 67%; /* Ajuste da largura da linha */
     margin-left: 0; /* Centralização */
   }
 
+
+  @media (min-width:1401px) {
+    width: 65%; /* Ajuste da largura do título */
+   
+  }
 `;
 
 export const Cards = styled.div`
