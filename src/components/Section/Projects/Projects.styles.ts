@@ -16,6 +16,11 @@ export const Container = styled.section`
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
   background-color: ${primaryColor};
 
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    padding: 3rem; /* Aumentar o padding para telas maiores */
+    max-width: 100%; /* Limitar a largura a 90% */
+  }
+
 `;
 
 
@@ -44,6 +49,12 @@ export const ContentWrapper = styled.div`
  
   }
 
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    max-width: 1100px; /* Ajuste no limite da largura */
+    padding: 2.5rem; /* Padding ajustado */
+    justify-content: space-evenly; /* Distribuir igualmente os elementos */
+  }
+
 `;
 
 
@@ -67,6 +78,15 @@ export const Title = styled.div`
     font-size: 28px; /* Ajuste no tamanho da fonte */
   }
 }
+
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    width: 85%; /* Ajuste da largura do título */
+    p {
+      font-size: 30px; /* Ajuste do tamanho da fonte */
+    }
+  }
+
 
 
   
@@ -100,6 +120,11 @@ export const Line = styled.div`
   margin-left: 0; /* Centraliza a linha */
 }
 
+@media (min-width: 1201px) and (max-width: 1400px) {
+    width: 85%; /* Ajuste da largura da linha */
+    margin-left: 0; /* Centralização */
+  }
+
 `;
 
 export const Cards = styled.div`
@@ -110,7 +135,7 @@ export const Cards = styled.div`
 
   @media (min-width: 360px) and (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr); /* Um cartão por linha */
-    gap: 10px; /* Reduz o espaço entre os cartões */
+    gap: 30px; /* Reduz o espaço entre os cartões */
   }
 
   
@@ -126,7 +151,7 @@ export const Cards = styled.div`
 
 
 @media (min-width: 1201px) and (max-width: 1400px) {
-    grid-template-columns: repeat(3, 1fr); /* Ajusta para 2 colunas */
+    grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
     gap: 35px; /* Espaçamento ajustado */
     justify-content: center; /* Centraliza os cartões dentro da grid */
     justify-items: center; /* Centraliza os itens dentro de cada célula da grid */

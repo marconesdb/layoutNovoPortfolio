@@ -34,15 +34,13 @@ export const VerticalLine = styled.div`
   /* transform: translateY(-2150px); */
 
   @media (min-width:1201px) and (max-width:1400px) {
-    margin-top: -750px;
+    margin-top: -2520px;
   }
 
 
   @media (min-width: 1401px) { 
-    margin-top: -100px;
+    margin-top: -1940px;
   }
-
-
 `;
 
 export const ImageContainer = styled.div`
@@ -63,10 +61,7 @@ export const RetanguloEsquerdoInferior = styled.div`
   left: 0;
   transform: translateY(500px);
 
-  @media (min-width: 1640px) {
-    height: 200px;
-    left: 30px;
-  }
+
 `;
 
 export const Cubo = styled.div`
@@ -85,8 +80,18 @@ export const Cubo = styled.div`
   .cubo1 {
     top: 20px;
     transform: translateY(-360px);
+
+    @media (min-width:1201px) and (max-width:1400px) {
+      transform: translateY(190px);
   }
 
+  @media (min-width: 1401px) { 
+    margin-top: 750px;
+  }
+  }
+
+
+ 
   .cubo2 {
     top: 120px;
     transform: translateY(820px);

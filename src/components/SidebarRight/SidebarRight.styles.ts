@@ -13,6 +13,11 @@ export const SidebarRetanguloDireito= styled.div`
   @media (min-width: 1201px) and (max-width: 1400px) { 
     margin-left: 65%;
   }
+
+  
+  @media (min-width: 1401px) { 
+    margin-left: 50%;
+  }
 `;
 
 export const SidebarRetanguloDireitoInferior= styled.div`
@@ -27,6 +32,10 @@ export const SidebarRetanguloDireitoInferior= styled.div`
 
   @media (min-width: 1201px) and (max-width: 1400px) { 
     margin-left: 65%;
+  }
+
+  @media (min-width: 1401px) { 
+    margin-left: 50%;
   }
 `;
 
