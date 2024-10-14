@@ -73,6 +73,19 @@ export const Title = styled.div`
   }
 
 
+  @media (min-width: 1400px) {
+    width: 80%;
+    margin-top: 70px;
+   
+  
+    transform: translateX(0); /* Centraliza horizontalmente */
+    
+    p {
+      font-size: 28px;
+    }
+  }
+
+
 `;
 
 export const Line = styled.div`
@@ -89,17 +102,17 @@ export const Line = styled.div`
     
  }
 
-  /* Responsividade */
-  @media (min-width: 993px) and (max-width: 1200px) {
-   
-   
-    
- }
+  
 
 
  @media (min-width: 1201px) and (max-width: 1400px) {
   flex-grow: 1; /* Faz com que a linha se expanda para ocupar o espaço restante */
     }
+
+  @media (min-width: 1401px) {
+  flex-grow: 1; /* Faz com que a linha se expanda para ocupar o espaço restante */
+  }
+
 `;
 
 
@@ -306,10 +319,6 @@ export const SkillsContainer = styled.div`
   margin-top: 50px; /* Espaçamento entre skills e o container superior */
   width: 100%; /* Ocupar 100% da largura do MainContainer */
   
-
- 
-
-
 .Container{
   display: flex;
   justify-content: center;
@@ -323,6 +332,7 @@ export const SkillsContainer = styled.div`
   }
 
  }
+
 }
 
  .Container Content{
@@ -331,6 +341,7 @@ export const SkillsContainer = styled.div`
   width: 100%;
   margin-top: 20px;
   justify-content: center;
+
  }
 
 
@@ -363,6 +374,8 @@ export const SkillsContainer = styled.div`
     @media (min-width: 1201px) and (max-width: 1400px) {
       width: 120px;
     }
+
+   
   }
  
 
@@ -410,6 +423,8 @@ export const SkillsContainer = styled.div`
     @media (min-width: 1201px) and (max-width: 1400px) {
       width: 120px;
     }
+
+   
 }
 
 
@@ -435,6 +450,8 @@ export const SkillsContainer = styled.div`
     @media (min-width: 1201px) and (max-width: 1400px) {
       width: 120px;
     }
+
+   
 }
 
 /* Estilos para a terceira coluna */
@@ -453,6 +470,8 @@ export const SkillsContainer = styled.div`
     @media (min-width: 1201px) and (max-width: 1400px) {
       width: 145px;
     }
+
+   
 }
 
 
@@ -473,6 +492,8 @@ export const SkillsContainer = styled.div`
     @media (min-width: 1201px) and (max-width: 1400px) {
       width: 145px;
     }
+
+    
   }
  
 
