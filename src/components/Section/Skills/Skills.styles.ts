@@ -60,9 +60,10 @@ export const Title = styled.div`
     font-size: 32px;
   }
 
-  @media (min-width: 360px) and (max-width: 1200px) {
-    width: 100%;
+  @media (min-width: 360px) and (max-width: 1400px) {
+    width: 80%;
     margin-top: 70px;
+   
   
     transform: translateX(0); /* Centraliza horizontalmente */
     
@@ -91,9 +92,14 @@ export const Line = styled.div`
   /* Responsividade */
   @media (min-width: 993px) and (max-width: 1200px) {
    
-    flex-grow: 1; /* Faz com que a linha se expanda para ocupar o espaço restante */
+   
     
  }
+
+
+ @media (min-width: 1201px) and (max-width: 1400px) {
+  flex-grow: 1; /* Faz com que a linha se expanda para ocupar o espaço restante */
+    }
 `;
 
 
@@ -352,6 +358,11 @@ export const SkillsContainer = styled.div`
     @media (min-width: 993px) and (max-width: 1200px) {
       width: 120px;
     }
+
+    
+    @media (min-width: 1201px) and (max-width: 1400px) {
+      width: 120px;
+    }
   }
  
 
@@ -394,6 +405,11 @@ export const SkillsContainer = styled.div`
     @media (min-width: 993px) and (max-width: 1200px) {
       width: 120px;
     }
+
+
+    @media (min-width: 1201px) and (max-width: 1400px) {
+      width: 120px;
+    }
 }
 
 
@@ -415,6 +431,10 @@ export const SkillsContainer = styled.div`
    @media (min-width: 993px) and (max-width: 1200px) {
       width: 120px;
     }
+
+    @media (min-width: 1201px) and (max-width: 1400px) {
+      width: 120px;
+    }
 }
 
 /* Estilos para a terceira coluna */
@@ -428,6 +448,10 @@ export const SkillsContainer = styled.div`
     width: 100%; /* Largura flexível */
     height: 410px;  /* Altura fixa */
     margin-top: 40px; /* Espaço superior */
+    }
+
+    @media (min-width: 1201px) and (max-width: 1400px) {
+      width: 145px;
     }
 }
 
@@ -444,6 +468,10 @@ export const SkillsContainer = styled.div`
     margin-top: 50px; /* Espaço superior */
     margin-left: 0;
   
+    }
+
+    @media (min-width: 1201px) and (max-width: 1400px) {
+      width: 145px;
     }
   }
  
