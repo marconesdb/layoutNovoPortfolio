@@ -69,7 +69,7 @@ export const Title = styled.div`
 
   /* Responsividade */
   @media (min-width: 360px) and (max-width: 768px) {
-    width: 80%;
+    width: 100%;
   }
 
   @media (min-width: 769px) and (max-width: 1200px) {
@@ -107,12 +107,12 @@ export const Line = styled.div`
   width: 600px;
   background-color: #A8990F;
   margin-left: 10px;
-
+  flex-grow: 1; /* Faz com que a linha se expanda para ocupar o espaço restante */
  
 
   @media (min-width: 360px) and (max-width: 768px) {
-    width: 100%; /* Ajusta a largura para dispositivos pequenos */
-    margin-left: 0; /* Remove a margem para centralização */
+    width: 30%; /* Ajusta a largura para dispositivos pequenos */
+    margin-left: 25px; /* Remove a margem para centralização */
   }
 
   @media (min-width: 769px) and (max-width: 1200px) {

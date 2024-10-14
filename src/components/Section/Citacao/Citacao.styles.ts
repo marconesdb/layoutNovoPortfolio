@@ -18,6 +18,12 @@ export const Container = styled.section`
   overflow-x: hidden; /* Prevenir rolagem horizontal no container */
   background-color: ${primaryColor};
 
+
+
+  @media (min-width: 360px) and (max-width: 768px) {
+  min-height: 30vh;
+   
+  }
 `;
 
 
@@ -35,7 +41,7 @@ export const ContentWrapper = styled.div`
   
 
   @media (min-width: 360px) and (max-width: 768px) {
-    margin-top: -300px;
+    
   }
 `;
 
@@ -58,6 +64,11 @@ export const ContainerCitacao = styled.div`
     padding: 0 10px; /* Reduz o padding lateral */
     
   }
+
+
+  @media (min-width: 360px) and (max-width: 768px) {
+  
+  }
 `;
 
 
@@ -70,12 +81,7 @@ export const DivCitacao = styled.div`
   /* margin-top: -300px; */
   text-align: center; /* Centraliza o texto da citação */
 
-  
-  @media (min-width: 360px) and (max-width: 768px) {
-    
-   
-    transform: translateY(150px);
-  }
+ 
 
   .aspasSuperior, .aspasInferior {
     font-size: 40px;

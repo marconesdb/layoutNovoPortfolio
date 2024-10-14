@@ -15,6 +15,12 @@ export const Container = styled.section`
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
   overflow-x: hidden; /* Prevenir rolagem horizontal no container */
   background-color: ${primaryColor};
+
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    flex-direction: column; // Mudando para coluna em telas menores
+    align-items: center; // Centraliza itens
+  }
 `;
 
 
@@ -24,12 +30,17 @@ export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%; /* Ocupa 100% da largura do container */
   max-width: 1200px; /* Limite de largura máxima */
   flex-wrap: wrap; /* Permitir quebra de linha se necessário */
   box-sizing: border-box; /* Previne overflow horizontal com padding */
 
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    flex-direction: column; // Mudando para coluna em telas menores
+    align-items: center; // Centraliza itens
+  }
 `;
 
 
@@ -49,7 +60,16 @@ export const Title = styled.div`
     font-size: 32px;
   }
 
+  @media (min-width: 360px) and (max-width: 768px) {
+    width: 100%;
+    margin-top: 70px;
   
+    transform: translateX(0); /* Centraliza horizontalmente */
+    
+    p {
+      font-size: 28px;
+    }
+  }
 `;
 
 export const Line = styled.div`
@@ -57,8 +77,13 @@ export const Line = styled.div`
   width: 280px;
   background-color: #A8990F;
   margin-left: 10px;
-
-
+  flex-grow: 1; /* Faz com que a linha se expanda para ocupar o espaço restante */
+ /* Responsividade */
+ @media (min-width: 360px) and (max-width: 768px) {
+    width: 100%; 
+    margin-left: 25px;
+    
+ }
 `;
 
 
@@ -72,7 +97,13 @@ export const MainContainer = styled.div`
 
   
 
-  
+  /* Responsividade */
+  @media (min-width: 360px) and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+
   
 `;
 export const ImagensSuperiorContainer = styled.div`
@@ -116,6 +147,17 @@ export const ImagensSuperiorContainer = styled.div`
     transform: translateX(0px);
   }
 
+  /* Responsividade */
+  @media (min-width: 360px) and (max-width: 768px) {
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 45px;
+    .quadrado1 {
+      width: 80px;
+      height: 80px;
+      margin-left: 50px;
+    }
+}
 
 `;
 
@@ -124,7 +166,18 @@ export const ImagensInferiorContainer = styled.div`
   justify-content: space-between;
   margin-top: 100px;
   
- 
+  @media (min-width: 360px) and (max-width: 576px) {
+    flex-direction: column; // Alinha os elementos verticalmente (coluna)
+    align-items: center; // Centraliza os elementos
+    margin-top: 50px; // Ajuste da margem superior
+
+    .cubo2 {
+      margin-left: 0; // Remove a margem à esquerda
+      margin-right: 0; // Remove a margem à direita
+    }
+}
+
+
   
 
   .cubo2 {
@@ -153,6 +206,24 @@ export const ImagensInferiorContainer = styled.div`
     transform: translateX(-10px);
   }
 
+
+  /* Responsividade */
+@media (min-width: 360px) and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+    .quadrado2 {
+      width: 60px;
+      height: 50px;
+      transform: translateX(-80px);
+    }
+
+    .cubo2{
+      margin-top: 25px;
+      transform: translateX(20px);
+    }
+  }
 `;
 
 
@@ -201,6 +272,13 @@ export const IconeLogo = styled.div`
    margin-top: 30px; 
   }
 
+  /* Responsividade */
+  @media (min-width: 360px) and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+    gap: 5px;
+  }
 `;
 
 export const SkillsContainer = styled.div`
@@ -211,6 +289,17 @@ export const SkillsContainer = styled.div`
   margin-top: 50px; /* Espaçamento entre skills e o container superior */
   width: 100%; /* Ocupar 100% da largura do MainContainer */
   
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    width: 100%; /* O container ocupa 100% da largura da tela */
+    margin-left: 0; /* Remove margem lateral */
+    transform: none; /* Remove qualquer transformação */
+    
+    display: flex;
+    flex-direction: column; /* Alinha em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+
+  }
 
 
 .Container{
@@ -237,11 +326,19 @@ export const SkillsContainer = styled.div`
   border: solid 1px #ABB2BF;
   width: 150px;
   height: 100px;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    height: 410px; /* Altura fixa */
+    width: 100%; /* Largura flexível */
+    margin-top: 150px; /* Espaço superior */
+       
+    }
   }
-  .p-1{
+ 
+
+  .p-1, .p-2, .p-3, .p-4, .p-5 {
     color: white;
     border-bottom: solid 1px #ABB2BF;
-    /* width: 149px; */
     width: 100%;
     margin-right: 35px;
     font-weight: 500;
@@ -249,16 +346,7 @@ export const SkillsContainer = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
-
-
-
-    @media (min-width: 1640px) {
-    width: 198px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    }
-
+    
     @media (min-width: 360px) and (max-width: 768px) {
       width: 100%; 
       align-items: center;
@@ -267,135 +355,76 @@ export const SkillsContainer = styled.div`
 
     }
   }
+
+
 /* Estilos para a segunda coluna */
 .coluna2 .Skills-2 {
   border: solid 1px #ABB2BF;
   width: 180px;
   height: 120px;
-}
 
-.p-2{
-    color: white;
-    border-bottom: solid 1px #ABB2BF;
-    /* width: 179px; */
-    width: 100%;
-    margin-right: 35px;
-    font-weight: 500;
-    font-size: 16px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-
-
-    @media (min-width: 1640px) {
-    width: 238px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+  @media (min-width: 360px) and (max-width: 768px) {
+    
+    margin-left: 0px;
+    width: 100%; /* Largura flexível */
+    height: 410px; /* Altura fixa */
+    margin-top: 250px; /* Espaço superior */
     
     }
+}
 
-    @media (min-width: 360px) and (max-width: 768px) {
-      width: 100%; 
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-    }
-  }
+
 
 .coluna2 .Skills-3 {
   border: solid 1px #ABB2BF;
   width: 180px;
   height: 120px;
   margin-top: 10px;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+   
+   margin-left: 0px;
+   width: 100%; /* Largura flexível */
+   height: 410px; /* Altura fixa */
+   margin-top: 250px; /* Espaço superior */
+   }
 }
 
-.p-3{
-    border-bottom: solid 1px #ABB2BF;
-    /* width: 179px; */
-    width: 100%;
-    margin-right: 35px;
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-
-    @media (min-width: 1640px) {
-    width: 268px;
-    
-    }
-
-    @media (min-width: 360px) and (max-width: 768px) {
-      width: 100%; 
-    }
-  }
-        /* Estilos para a terceira coluna */
+/* Estilos para a terceira coluna */
 .coluna3 .Skills-4 {
   border: solid 1px #ABB2BF;
   width: 190px;
   height: 180px;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    margin-left: 0;
+    width: 100%; /* Largura flexível */
+    height: 410px;  /* Altura fixa */
+    margin-top: 165px; /* Espaço superior */
+    }
 }
 
-.p-4{
-    border-bottom: solid 1px #ABB2BF;
-    /* width: 189px; */
-    width: 100%;
-    margin-right: 35px;
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    
-    @media (min-width: 1640px) {
-    width: 238px;
-    }
-
-    @media (min-width: 360px) and (max-width: 768px) {
-      width: 100%; 
-      
-    }
-  }
 
 .coluna3 .Skills-5 {
   border: solid 1px #ABB2BF;
   width: 190px;
   height: 180px;
   margin-top: 10px;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    width: 100%; /* Largura flexível */
+    height: 410px;  /* Altura fixa */
+    margin-top: 200px; /* Espaço superior */
+    margin-left: 0;
+  
+    }
   }
  
-  .p-5{
-    border-bottom: solid 1px #ABB2BF;
-    /* width: 189px; */
-    width: 100%;
-    margin-right: 35px;
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-    @media (min-width: 1640px) {
-    width: 268px;
-    }
-
-    @media (min-width: 360px) and (max-width: 768px) {
-      width: 100%;  
-    }
-  }
 
   .p-texto{
     color: #ABB2BF;
     font-size: 16px;
     padding: 10px;
-
 
     @media (min-width: 360px) and (max-width: 768px) {
       margin-top: 30%;
