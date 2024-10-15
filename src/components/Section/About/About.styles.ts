@@ -15,6 +15,14 @@ export const Container = styled.section`
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
   overflow-x: hidden; /* Prevenir rolagem horizontal no container */
   background-color: ${primaryColor};
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    padding: 1rem;
+  }
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    padding: 1.5rem;
+  }
 `;
 
 
@@ -30,6 +38,16 @@ export const ContentWrapper = styled.div`
   flex-wrap: wrap; /* Permitir quebra de linha se necessário */
   box-sizing: border-box; /* Previne overflow horizontal com padding */
 
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 `;
 
 
@@ -56,6 +74,23 @@ export const Title = styled.div`
   p{
     font-size: 32px;
   }
+
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    width: 100%;
+    text-align: center;
+
+    p {
+      font-size: 24px;
+    }
+  }
+
+
+  @media (min-width: 576px) and (max-width: 992px) {
+    p {
+      font-size: 28px;
+    }
+  }
 `;
 
 export const Line = styled.div`
@@ -63,7 +98,22 @@ export const Line = styled.div`
   width: 325px;
   background-color: #A8990F;
   margin-left: 10px;
+  
 
+  @media (min-width: 360px) and (max-width: 576px) {
+    width: 40%;
+    margin-left: 20px;
+  }
+
+  @media (min-width: 576px) and (max-width: 992px) {
+    width: 60%;
+    margin-left: 20px;
+  }
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    width: 40%;
+     
+    }
 `;
 
 export const ContainerAbout = styled.div`
@@ -73,6 +123,15 @@ export const ContainerAbout = styled.div`
   align-items: center; /* Garante que ambos os containers estejam alinhados no topo */
   flex-wrap: wrap; /* Permite quebra de linha se necessário */
   box-sizing: border-box; /* Previne overflow horizontal com padding */
+
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 576px) and (max-width: 992px) {
+    flex-direction: row;
+  }
 `;
 
 
@@ -115,6 +174,27 @@ export const ContainerEsquerdo = styled.div`
   text-align: justify;
  }
 
+
+ @media (min-width: 360px) and (max-width: 576px) {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 50px;
+
+    .texto-titulo,
+    .recuo {
+      margin-left: 0;
+    }
+
+    .p-1,
+    .p-2 {
+      font-size: 14px;
+    }
+  }
+
+
+  @media (min-width: 576px) and (max-width: 992px) {
+    width: 60%;
+  }
 `;
 
 
@@ -125,7 +205,13 @@ export const ContainerDireito = styled.div`
   box-sizing: border-box; /* Garante que o padding não cause overflow */
  
   
- 
+  @media (min-width: 577px) and (max-width: 992px) {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px; /* Espaçamento entre cubos */
+   flex-direction: row; /* Garante que os cubos fiquem lado a lado */
+  }
 
 
   .cubo1 {
@@ -135,6 +221,13 @@ export const ContainerDireito = styled.div`
     gap: 5px; /* Espaço entre os círculos */
     transform: translateY(-20px);
     margin-left: 150px;
+
+    @media (min-width: 577px) and (max-width: 992px) {
+      align-items: center;
+      margin-left: 0;
+      margin-top: 300px;
+    }
+
     
   }
 
@@ -154,6 +247,13 @@ export const ContainerDireito = styled.div`
     transform: translateY(-20px);
     margin-left: 380px;
 
+    
+    @media (min-width: 577px) and (max-width: 992px) {
+      align-items: center;
+      margin-left: 100px;
+     
+    }
+
   }
 
   .dot {
@@ -162,4 +262,26 @@ export const ContainerDireito = styled.div`
     background-color: #ABB2BF;
     border-radius: 50%;
   }
+
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    width: 100%;
+    padding: 0 10px;
+
+    .cubo1 {
+      margin-top: 100px;
+      margin-left: 0px;
+ 
+      align-items: center;
+      justify-content: center;
+    }
+    .cubo2 {
+      margin-top: 100px;
+      margin-left: 180px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  
 `;

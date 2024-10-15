@@ -73,7 +73,10 @@ export const Title = styled.div`
   }
 
   @media (min-width: 769px) and (max-width: 1200px) {
-  width: 90%;
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   p {
     font-size: 28px; /* Ajuste no tamanho da fonte */
   }
@@ -128,7 +131,7 @@ export const Line = styled.div`
   }
 
   @media (min-width: 769px) and (max-width: 1200px) {
-  width: 80%; /* Ajusta a largura da linha */
+  width: 67%; /* Ajusta a largura da linha */
   margin-left: 0; /* Centraliza a linha */
 }
 

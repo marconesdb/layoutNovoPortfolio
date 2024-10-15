@@ -15,7 +15,7 @@ export const Container = styled.section`
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
   overflow-x: hidden; /* Prevenir rolagem horizontal no container */
   background-color: ${primaryColor};
-
+  min-height: 100vh;
 
   @media (min-width: 360px) and (max-width: 576px) {
     flex-direction: column; // Mudando para coluna em telas menores
