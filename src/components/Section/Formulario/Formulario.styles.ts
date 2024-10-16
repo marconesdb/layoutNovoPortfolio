@@ -22,6 +22,12 @@ export const Container = styled.section`
 
     
   }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    padding: 1.5rem; /* Ajusta o padding para telas médias */
+    
+   
+  }
 `;
 
 
@@ -42,6 +48,12 @@ export const ContentWrapper = styled.div`
     flex-direction: column; /* Coloca os itens em coluna para melhor visualização em telas pequenas */
     
   }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    justify-content: center;
+    padding: 0; // Removido o padding para evitar overflow
+    max-width: 100%; // Garante que não ultrapasse a largura do container pai
+  }
 `;
 
 
@@ -54,6 +66,11 @@ export const Main = styled.div`
   @media (min-width: 360px) and (max-width: 576px) {
     justify-content: center; /* Ajuste para telas menores */
     padding: 1rem;
+  }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    padding: 0; // Removido o padding para evitar overflow
+    width: 100%;
   }
 `;
 
@@ -74,6 +91,12 @@ export const FormularioWrapper = styled.div`
       padding: 15px;
       box-sizing: border-box;
     }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+      max-width: 90%;
+      margin: 100px auto 0; // Centraliza horizontalmente
+      width: auto; // Permite que a largura seja ajustada automaticamente
+    }
   }
 
   h2 {
@@ -85,6 +108,10 @@ export const FormularioWrapper = styled.div`
     @media (min-width: 360px) and (max-width: 576px) {
       font-size: 18px; /* Reduz o tamanho da fonte */
     }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+      font-size: 20px; /* Ajusta o tamanho da fonte para tela média */
+    }
   }
 
   form {
@@ -93,6 +120,10 @@ export const FormularioWrapper = styled.div`
 
     @media (min-width: 360px) and (max-width: 576px) {
       width: 100%;
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+      width: 100%; /* Mantém largura total */
     }
   }
 
@@ -109,6 +140,9 @@ export const FormularioWrapper = styled.div`
       font-size: 14px; /* Ajusta o tamanho da fonte */
     }
   
+    @media (min-width: 577px) and (max-width: 768px) {
+      font-size: 15px; /* Ajuste da fonte para tamanhos médios */
+    }
   }
 
  
@@ -120,6 +154,10 @@ export const FormularioWrapper = styled.div`
     @media (min-width: 360px) and (max-width: 576px) {
       flex-direction: column; /* Torna os campos empilhados */
     }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+      flex-direction: row; /* Volta para linha em telas médias */
+    }
   }
 
   .form-item {
@@ -129,6 +167,11 @@ export const FormularioWrapper = styled.div`
     @media (min-width: 360px) and (max-width: 576px) {
       width: 100%; /* Campos ocupam 100% da largura em telas pequenas */
       margin-top: 10px;
+    }
+
+
+    @media (min-width: 577px) and (max-width: 768px) {
+      width: 48%; /* Manter o layout de duas colunas */
     }
   }
 
@@ -148,6 +191,10 @@ export const FormularioWrapper = styled.div`
 
     @media (min-width: 360px) and (max-width: 576px) {
       font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+      font-size: 15px; /* Ajusta o tamanho da fonte */
     }
   }
 
@@ -174,5 +221,11 @@ export const EnviarButton = styled.button`
     width: 100%; /* O botão ocupa toda a largura disponível em telas pequenas */
     font-size: 12px; /* Ajuste do tamanho da fonte */
     padding: 10px; /* Ajuste do padding */
+  }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    width: auto; /* Não ocupa 100% da largura */
+    font-size: 14px; /* Fonte ligeiramente maior */
+    align-self: center; /* Centraliza o botão */
   }
 `;

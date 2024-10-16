@@ -111,6 +111,8 @@ export const Main = styled.div`
     flex-direction: column; /* Colocar os containers em coluna */
     margin-top: 40px; /* Ajustando espaçamento superior */
     width: 100%; 
+    min-width: 100%;
+    padding: 10px;
    
   }
 
@@ -187,8 +189,7 @@ export const ContainerDireito = styled.div`
   /* Responsividade para dispositivos entre 360px e 576px */
   @media (min-width: 360px) and (max-width: 768px) {
     width: 100%; /* Ocupa 100% da largura */
-    
-    padding: 10px; /* Reduzir o padding */
+    padding: 0px; /* Reduzir o padding */
     justify-content: center; /* Centralizar o conteúdo */
     
   }
@@ -236,7 +237,7 @@ export const ContainerDireito = styled.div`
  }
 
  @media (min-width: 360px) and (max-width: 768px) {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     justify-content: center;
     margin-top: 80px;
