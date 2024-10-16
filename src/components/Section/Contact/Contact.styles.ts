@@ -16,6 +16,14 @@ export const Container = styled.section`
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
   overflow-x: hidden; /* Prevenir rolagem horizontal no container */
   background-color: ${primaryColor};
+
+
+  /* Responsividade para dispositivos entre 360px e 576px */
+  @media (min-width: 360px) and (max-width: 576px) {
+    padding: 1rem; /* Reduzindo padding para telas menores */
+    height: auto;  /* Ajusta altura para o conteúdo */
+   
+  }
 `;
 
 
@@ -31,6 +39,14 @@ export const ContentWrapper = styled.div`
   flex-wrap: wrap; /* Permitir quebra de linha se necessário */
   box-sizing: border-box; /* Previne overflow horizontal com padding */
 
+
+/* Responsividade para dispositivos entre 360px e 576px */
+@media (min-width: 360px) and (max-width: 576px) {
+    flex-direction: column; /* Altera para coluna em telas menores */
+    justify-content: center;
+    align-items: center; /* Centralizar os itens */
+    width: 100%;
+  }
 `;
 
 
@@ -51,6 +67,9 @@ export const Title = styled.div`
   p {
     font-size: 32px;
   }
+
+
+  
 `;
 
 export const Line = styled.div`
@@ -58,6 +77,13 @@ export const Line = styled.div`
   width: 200px;
   background-color: #A8990F;
   margin-left: 10px;
+
+
+  /* Responsividade para dispositivos entre 360px e 576px */
+  @media (min-width: 360px) and (max-width: 576px) {
+    width: 150px; /* Reduzindo o tamanho da linha */
+  }
+
 
 `;
 
@@ -68,7 +94,13 @@ export const Main = styled.div`
   width: 100%; /* Ocupa 100% da largura disponível */
   margin-top: 90px;
 
-
+  /* Responsividade para dispositivos entre 360px e 576px */
+  @media (min-width: 360px) and (max-width: 576px) {
+    flex-direction: column; /* Colocar os containers em coluna */
+    margin-top: 40px; /* Ajustando espaçamento superior */
+    width: 100%; 
+   
+  }
 `;
 
 export const ContainerEsquerdo = styled.div`
@@ -79,13 +111,41 @@ export const ContainerEsquerdo = styled.div`
   font-size: 16px;
   color: #ABB2BF;
   text-align: justify;
+  margin: 0; /* Remover possíveis margens extras */
+  padding: 0; /* Remover padding para garantir alinhamento */
+  text-indent: 35px; /* Recuo na primeira linha do parágrafo */
+ }
 
  
- }
+ 
 
- .recuo-paragrafo{
-  margin-left: 35px;
- }
+ @media (min-width: 360px) and (max-width: 576px) {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: block;
+
+
+    .recuo-paragrafo {
+      margin-left: 0;
+      
+    }
+
+    .paragrafo{
+      width: 100%;
+      text-indent: 35px;
+      
+    }
+    
+  }
+
+
+ /* Responsividade para dispositivos entre 360px e 576px */
+ @media (min-width: 360px) and (max-width: 576px) {
+    width: 100%; /* Ocupar toda a largura */
+    padding: 0; /* Reduzir o padding */
+    
+  }
 `;
 
 export const ContainerDireito = styled.div`
@@ -94,12 +154,21 @@ export const ContainerDireito = styled.div`
   display: flex;
   justify-content: end;
 
-  
   .contato{
   width: 63%; 
   padding: 20px; /* Padding opcional para espaçamento interno */
   border: 1px solid #ABB2BF;
-  /* transform:translateX(180px); */
+
+
+
+  /* Responsividade para dispositivos entre 360px e 576px */
+  @media (min-width: 360px) and (max-width: 576px) {
+    width: 100%; /* Ocupa 100% da largura */
+    
+    padding: 10px; /* Reduzir o padding */
+    justify-content: center; /* Centralizar o conteúdo */
+    
+  }
 
   }
 
@@ -142,4 +211,25 @@ export const ContainerDireito = styled.div`
   color: #fff;
   text-align: justify;
  }
+
+ @media (min-width: 360px) and (max-width: 576px) {
+    width: 90%;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 80px;
+
+    .contato {
+      width: 100%;
+      padding: 15px;
+    }
+
+    .emailContainer {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .email, .TituloMensagem {
+      text-align: center;
+    }
+  }
 `;
