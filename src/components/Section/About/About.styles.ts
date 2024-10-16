@@ -145,6 +145,18 @@ export const ContainerEsquerdo = styled.div`
   font-size: 16px;
   color: #ABB2BF;
   margin-left: 35px;
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    .texto-titulo {
+      width: 100%; /* Ocupar 100% da largura disponível */
+      padding: 0 10px; /* Adicionar um padding para espaçamento */
+      text-align: center;
+      flex-grow: 1; /* Permitir que o container cresça conforme o espaço disponível */
+    }
+
+   
+  }
+
   }
 
   .recuo{
@@ -180,6 +192,14 @@ export const ContainerEsquerdo = styled.div`
     .texto-titulo,
     .recuo {
       margin-left: 0;
+      word-spacing: normal; /* Espaçamento normal entre palavras */
+      hyphens: auto; /* Permite hifenização automática */
+      overflow-wrap: break-word; /* Quebra palavras longas se necessário */
+      letter-spacing: 0.01em; /* Leve ajuste no espaçamento entre letras */
+      text-justify: inter-word; /* Melhora a distribuição das palavras */
+      word-break: break-word; /* Permite a quebra de palavras longas */
+      text-align: justify;
+      
     }
 
     .p-1,
@@ -189,8 +209,8 @@ export const ContainerEsquerdo = styled.div`
   }
 
 
-  @media (min-width: 576px) and (max-width: 992px) {
-    width: 60%;
+  @media (min-width: 577px) and (max-width: 992px) {
+    width: 80%;
   }
 `;
 

@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import SidebarLeft from './components/SidebarLeft/SidebarLeft';
 import SidebarRight from './components/SidebarRight/SidebarRight';
 import Main from './components/Main/Main';
-// import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 import * as S from './styles/LayoutStyles';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <SidebarLeft />
         <Main />
         <SidebarRight />
-        {/* <Footer /> */}
+        <Footer />
       </S.Container>
     </>
   );

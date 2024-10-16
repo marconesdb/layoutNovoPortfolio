@@ -124,14 +124,15 @@ export const Main = styled.main`
 // Estilo para o Footer
 export const Footer = styled.footer`
   grid-area: footer;
-  /* background-color: #2c3036; */
-  /* background-color: #282C33;  */
   display: flex;
   align-items: center;
   justify-content: center; /* Centraliza todos os itens no footer */
   width: 100%;
-  padding: 20px; /* Adiciona um padding para espaçamento */
   overflow: hidden; /* Evita rolagem no footer */
   height: 150px; /* Altura fixa para o footer */
   border-top: 1px solid #ABB2BF;
+
+  @media (min-width: 360px) and (max-width: 576px) {
+     height: 300px;
+    }
 `;

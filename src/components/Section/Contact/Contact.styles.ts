@@ -25,6 +25,12 @@ export const Container = styled.section`
    
   }
 
+  /* Novo: Responsividade para dispositivos entre 769px e 992px */
+  @media (min-width: 769px) and (max-width: 992px) {
+    padding: 1.5rem; /* Ajuste no padding */
+    height: auto;  /* Ajusta a altura */
+  }
+
   @media (min-width: 1201px) and (max-width: 1400px) {
     padding: 1.5rem; /* Ajusta o padding para telas médias */
     height: auto; /* Ajuste de altura caso necessário */
@@ -52,6 +58,12 @@ export const ContentWrapper = styled.div`
     align-items: center; /* Centralizar os itens */
     width: 100%;
   }
+/* Novo: Responsividade para dispositivos entre 769px e 992px */
+@media (min-width: 769px) and (max-width: 992px) {
+    justify-content: space-around; /* Espaçar os itens */
+    max-width: 900px; /* Ajusta a largura máxima */
+  }
+
 
   @media (min-width: 1201px) and (max-width: 1400px) {
     max-width: 1100px; /* Ajusta a largura máxima para telas médias */
@@ -116,6 +128,13 @@ export const Main = styled.div`
    
   }
 
+  /* Novo: Responsividade para dispositivos entre 769px e 992px */
+  @media (min-width: 769px) and (max-width: 992px) {
+    margin-top: 60px; /* Ajusta o espaçamento superior */
+    padding: 15px; /* Ajusta o padding */
+  }
+
+
   @media (min-width: 1201px) and (max-width: 1400px) {
     margin-top: 70px; /* Ajusta o espaçamento superior */
   }
@@ -146,31 +165,45 @@ export const ContainerEsquerdo = styled.div`
 
  @media (min-width: 360px) and (max-width: 768px) {
     width: 100%;
-    padding: 10px;
+    padding: 0;
     text-align: center;
     display: block;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
+    /* Novo: Responsividade para dispositivos entre 769px e 992px */
+  @media (min-width: 769px) and (max-width: 992px) {
+    width: 48%; /* Ajuste fino na largura */
+    padding: 15px; /* Ajuste de padding */
+  }
 
     .recuo-paragrafo {
       margin-left: 0;
       
     }
 
-    .paragrafo{
-      width: 100%;
-      text-indent: 35px;
-      
+    .paragrafo {
+      width: 90%; /* Diminui a largura do parágrafo em telas menores */
+    max-width: 90%; /* Limitar a largura do parágrafo para evitar que ele se expanda muito */
+    text-align: justify; /* Mantém o texto justificado */
+    word-spacing: 0.05em; /* Ajuste fino no espaçamento entre palavras */
+    letter-spacing: 0.01em; /* Pequeno ajuste no espaçamento entre letras */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas para melhorar a leitura */
+    word-break: break-word; /* Permite a quebra de palavras longas */
+    overflow-wrap: break-word; /* Força a quebra de linha em palavras longas */
+    hyphens: auto; /* Permite a hifenização automática */
     }
     
   }
 
 
  /* Responsividade para dispositivos entre 360px e 576px */
- @media (min-width: 360px) and (max-width: 768px) {
-    width: 100%; /* Ocupar toda a largura */
-    padding: 0; /* Reduzir o padding */
+ /* @media (min-width: 360px) and (max-width: 768px) {
+    width: 100%; 
+    padding: 0; 
     
-  }
+  } */
 `;
 
 export const ContainerDireito = styled.div`
@@ -253,6 +286,21 @@ export const ContainerDireito = styled.div`
       text-align: center;
     }
   }
+
+/* Novo: Responsividade para dispositivos entre 769px e 992px */
+@media (min-width: 769px) and (max-width: 992px) {
+    width: 48%;
+    padding: 15px;
+    
+    .contato {
+      width: 90%; /* Ajusta a largura do bloco contato */
+    }
+
+    .emailContainer {
+      width: 320px; /* Ajuste fino no container de email */
+    }
+  }
+
 
 
   @media (min-width: 1201px) and (max-width: 1400px) {
