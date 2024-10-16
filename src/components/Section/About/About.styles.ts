@@ -80,9 +80,6 @@ export const Title = styled.div`
     width: 100%;
     text-align: center;
 
-    p {
-      font-size: 24px;
-    }
   }
 
 
@@ -101,7 +98,7 @@ export const Line = styled.div`
   
 
   @media (min-width: 360px) and (max-width: 576px) {
-    width: 40%;
+    width: 30%;
     margin-left: 20px;
   }
 

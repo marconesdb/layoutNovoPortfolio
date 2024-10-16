@@ -5,7 +5,7 @@ import Projects from '../Section/Projects/Projects';
 import Skills from '../Section/Skills/Skills';
 import About from '../Section/About/About';
 import Contact from '../Section/Contact/Contact';
-// import Formulario from '../Section/Formulario/Formulario';
+import Formulario from '../Section/Formulario/Formulario';
 
 function Main() {
   return (
@@ -16,7 +16,7 @@ function Main() {
         <Skills/>
       <About/>
    <Contact/>
-       {/*<Formulario/> */}
+       <Formulario/>
     </S.Main>
   );
 }

@@ -24,6 +24,11 @@ export const Container = styled.section`
     height: auto;  /* Ajusta altura para o conteúdo */
    
   }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    padding: 1.5rem; /* Ajusta o padding para telas médias */
+    height: auto; /* Ajuste de altura caso necessário */
+  }
 `;
 
 
@@ -46,6 +51,11 @@ export const ContentWrapper = styled.div`
     justify-content: center;
     align-items: center; /* Centralizar os itens */
     width: 100%;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    max-width: 1100px; /* Ajusta a largura máxima para telas médias */
+    justify-content: space-around; /* Espaça os itens de forma equilibrada */
   }
 `;
 
@@ -84,7 +94,9 @@ export const Line = styled.div`
     width: 130px; /* Reduzindo o tamanho da linha */
   }
 
-
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    width: 180px; /* Ajusta o tamanho da linha */
+  }
 `;
 
 export const Main = styled.div`
@@ -101,12 +113,23 @@ export const Main = styled.div`
     width: 100%; 
    
   }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    margin-top: 70px; /* Ajusta o espaçamento superior */
+  }
 `;
 
 export const ContainerEsquerdo = styled.div`
   width: 50%; /* Ocupa 50% da largura */
   padding: 20px; /* Padding opcional para espaçamento interno */
   
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    width: 45%; /* Reduzindo a largura para melhor ajuste */
+    padding: 15px; /* Ajuste de padding */
+  }
+
+
+
   .paragrafo{
   font-size: 16px;
   color: #ABB2BF;
@@ -230,6 +253,20 @@ export const ContainerDireito = styled.div`
 
     .email, .TituloMensagem {
       text-align: center;
+    }
+  }
+
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    width: 45%; /* Ajusta a largura */
+    padding: 15px; /* Ajuste de padding */
+    
+    .contato {
+      width: 80%; /* Ajuste de largura para o bloco contato */
+    }
+
+    .emailContainer {
+      width: 300px; /* Ajuste de largura do container de email */
     }
   }
 `;
