@@ -186,13 +186,7 @@ export const ContainerDireito = styled.div`
 
 
 
-  /* Responsividade para dispositivos entre 360px e 576px */
-  @media (min-width: 360px) and (max-width: 768px) {
-    width: 100%; /* Ocupa 100% da largura */
-    padding: 0px; /* Reduzir o padding */
-    justify-content: center; /* Centralizar o conteúdo */
-    
-  }
+ 
 
   }
 
@@ -241,10 +235,13 @@ export const ContainerDireito = styled.div`
     padding: 10px;
     justify-content: center;
     margin-top: 80px;
+    max-width:  400px;
+
 
     .contato {
       width: 100%;
       padding: 15px;
+      
     }
 
     .emailContainer {
