@@ -156,6 +156,7 @@ export const Cards = styled.div`
   @media (min-width: 360px) and (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr); /* Um cartão por linha */
     gap: 30px; /* Reduz o espaço entre os cartões */
+    width: 70%;
   }
 
   
@@ -197,11 +198,10 @@ export const Card = styled.div`
   @media (min-width: 360px) and (max-width: 768px) {
     width: 100%; 
     height: auto; 
+    
   }
 
-  @media (min-width: 769px) and (max-width: 1200px) {
  
-}
 
 `;
 
