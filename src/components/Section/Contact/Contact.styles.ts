@@ -19,7 +19,7 @@ export const Container = styled.section`
 
 
   /* Responsividade para dispositivos entre 360px e 576px */
-  @media (min-width: 360px) and (max-width: 576px) {
+  @media (min-width: 360px) and (max-width: 768px) {
     padding: 1rem; /* Reduzindo padding para telas menores */
     height: auto;  /* Ajusta altura para o conteúdo */
    
@@ -41,7 +41,7 @@ export const ContentWrapper = styled.div`
 
 
 /* Responsividade para dispositivos entre 360px e 576px */
-@media (min-width: 360px) and (max-width: 576px) {
+@media (min-width: 360px) and (max-width: 768px) {
     flex-direction: column; /* Altera para coluna em telas menores */
     justify-content: center;
     align-items: center; /* Centralizar os itens */
@@ -80,8 +80,8 @@ export const Line = styled.div`
 
 
   /* Responsividade para dispositivos entre 360px e 576px */
-  @media (min-width: 360px) and (max-width: 576px) {
-    width: 150px; /* Reduzindo o tamanho da linha */
+  @media (min-width: 360px) and (max-width: 768px) {
+    width: 130px; /* Reduzindo o tamanho da linha */
   }
 
 
@@ -95,7 +95,7 @@ export const Main = styled.div`
   margin-top: 90px;
 
   /* Responsividade para dispositivos entre 360px e 576px */
-  @media (min-width: 360px) and (max-width: 576px) {
+  @media (min-width: 360px) and (max-width: 768px) {
     flex-direction: column; /* Colocar os containers em coluna */
     margin-top: 40px; /* Ajustando espaçamento superior */
     width: 100%; 
@@ -119,7 +119,7 @@ export const ContainerEsquerdo = styled.div`
  
  
 
- @media (min-width: 360px) and (max-width: 576px) {
+ @media (min-width: 360px) and (max-width: 768px) {
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -141,7 +141,7 @@ export const ContainerEsquerdo = styled.div`
 
 
  /* Responsividade para dispositivos entre 360px e 576px */
- @media (min-width: 360px) and (max-width: 576px) {
+ @media (min-width: 360px) and (max-width: 768px) {
     width: 100%; /* Ocupar toda a largura */
     padding: 0; /* Reduzir o padding */
     
@@ -162,7 +162,7 @@ export const ContainerDireito = styled.div`
 
 
   /* Responsividade para dispositivos entre 360px e 576px */
-  @media (min-width: 360px) and (max-width: 576px) {
+  @media (min-width: 360px) and (max-width: 768px) {
     width: 100%; /* Ocupa 100% da largura */
     
     padding: 10px; /* Reduzir o padding */
@@ -212,7 +212,7 @@ export const ContainerDireito = styled.div`
   text-align: justify;
  }
 
- @media (min-width: 360px) and (max-width: 576px) {
+ @media (min-width: 360px) and (max-width: 768px) {
     width: 90%;
     padding: 10px;
     justify-content: center;
