@@ -29,6 +29,39 @@ export const FooterContent = styled.div`
     
   }
  
+  @media (min-width: 577px) and (max-width: 768px) {
+    max-width: 100%;
+    min-height: 350px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    min-height: 300px;
+    max-width: 100%;
+    height: auto;
+    padding: 25px;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    max-width: 100%;
+    max-height: 200px;
+    padding: 30px;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    max-width: 75%;
+    height: 200px;
+    padding: 35px;
+    justify-content: space-between;
+    margin-top: 0;
+  }
 `;
 
 // Seção da esquerda
@@ -42,6 +75,26 @@ export const LeftSection = styled.div`
     width: 100%;
     text-align: center;
   }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    align-items: center;
+    width: 100%;
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    width: 50%;
+    align-items: flex-start;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    width: 50%;
+    padding-right: 20px;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    width: 50%;
+    padding-right: 25px;
+  }
 `;
 
 // Estilo para o conteúdo da seção esquerda
@@ -52,6 +105,25 @@ export const LeftSectionContent = styled.div`
   @media (min-width: 360px) and (max-width: 576px) {
     flex-direction: column;
   }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    flex-direction: column;
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 // Contêiner para o layout dos parágrafos
@@ -61,6 +133,15 @@ export const ParagraphContainer = styled.div`
 
   @media (min-width: 360px) and (max-width: 576px) {
     flex-direction: column;
+  }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
@@ -79,6 +160,30 @@ export const FirstParagraph = styled.p`
     text-align: center;
     margin-top: 10px;
   }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    font-size: 15px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    font-size: 15px;
+    margin: 0 0 10px 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    margin-top: 0;
+  }
 `;
 
 // Estilo para o segundo parágrafo
@@ -95,6 +200,30 @@ export const SecondParagraph = styled.p`
     margin: 10px 0 0 0;
     text-align: center;
   }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    font-size: 15px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    font-size: 15px;
+    margin: 0 0 10px 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    margin: 0 0 10px 30px;
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    margin: 0 0 10px 35px;
+    font-size: 16px;
+    margin-top: 0;
+  }
 `;
 
 // Estilo para o terceiro parágrafo
@@ -110,6 +239,32 @@ export const ThirdParagraph = styled.p`
     margin: 10px 0 0 0;
     text-align: center;
   }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    font-size: 15px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    font-size: 15px;
+    margin: 10px 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    margin: 10px 0;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    margin: 10px 0;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 0;
+  }
 `;
 
 // Estilo para o parágrafo central
@@ -121,6 +276,28 @@ export const CentralParagraph = styled.p`
   @media (min-width: 360px) and (max-width: 576px) {
     text-align: center;
   }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    text-align: center;
+  }
+ 
+  @media (min-width: 769px) and (max-width: 992px) {
+    text-align: center;
+    margin-top: 150px;
+    width: 100%;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+  }
 `;
 
 // Estilo para o parágrafo das redes sociais
@@ -130,8 +307,28 @@ export const ParagraphSocialNetworks = styled.p`
   margin-right: 25px;
   margin-top: -60px;
 
+  @media (min-width: 577px) and (max-width: 768px) {
+    margin-top: 10px;
+    margin-right: 0;
+  }
 
+  @media (min-width: 769px) and (max-width: 992px) {
+    margin-top: 0;
+    margin-right: 0;
+    font-size: 20px;
+  }
 
+  @media (min-width: 993px) and (max-width: 1200px) {
+    margin-top: 0;
+    margin-right: 0;
+    font-size: 22px;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    margin-top: 0;
+    margin-right: 0;
+    font-size: 24px;
+  }
 `;
 
 // Seção da direita
@@ -147,6 +344,32 @@ export const RightSection = styled.div`
     margin-left: 0;
     margin-top: 80px;
   }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    align-items: center;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    width: 45%;
+    align-items: flex-end;
+    margin-left: 0;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    width: 50%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    width: 50%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
 `;
 
 // Adicione um estilo para a imagem do logo
@@ -162,6 +385,33 @@ export const LogoImage = styled.img`
     height: 24px;
     margin: 0;
   }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    width: 90px;
+    height: 27px;
+    margin: 0;
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    width: 90px;
+    height: 27px;
+    margin: 0 0 20px 0;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    width: 95px;
+    height: 28px;
+    margin: 0 0 20px 0;
+    margin-top: 0;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    width: 100px;
+    height: 30px;
+    margin: 0 0 20px 0;
+    margin-top: 0;
+  }
+
 `;
 
 // Contêiner de Imagens na direita
@@ -176,6 +426,30 @@ export const ImagesContainer = styled.div`
     margin-top: 20px;
     width: 100%;
   }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    justify-content: flex-end;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    justify-content: flex-end;
+    margin-top: 15px;
+    
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    justify-content: flex-end;
+    margin-top: 15px;
+  }
+
 `;
 
 // Seção central
@@ -194,6 +468,17 @@ export const CenterSection = styled.div`
     margin-top: 20px;
     
   }
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    position: absolute;
+    margin-top: 50px;
+  }
+
 `;
 
 // Contêiner da Imagem
@@ -206,5 +491,15 @@ export const ImageContainer = styled.div`
   @media (min-width: 360px) and (max-width: 576px) {
     justify-content: center;
     margin-right: 0;
+  }
+
+  @media (min-width: 360px) and (max-width: 576px) {
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    justify-content: center;
+    margin-right: 10px;
   }
 `;

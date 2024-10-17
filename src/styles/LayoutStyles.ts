@@ -135,4 +135,28 @@ export const Footer = styled.footer`
   @media (min-width: 360px) and (max-width: 576px) {
      height: 300px;
     }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+     height: 350px;
+     margin: 0;
+    }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+     height: 300px;
+     margin: 0;
+    }
+
+    @media (min-width: 993px) and (max-width: 1200px) {
+     height: 200px;
+     margin: 0;
+    }
+    @media (min-width: 1201px) and (max-width: 1400px) {
+      width: 100%;
+    height: 200px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ABB2BF;
+  }
 `;
