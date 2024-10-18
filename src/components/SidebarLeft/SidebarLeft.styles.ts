@@ -34,7 +34,7 @@ export const VerticalLine = styled.div`
   /* transform: translateY(-2150px); */
 
   @media (min-width:1201px) and (max-width:1400px) {
-    margin-top: -5430px;
+    margin-top: -5030px;
   }
 
 
