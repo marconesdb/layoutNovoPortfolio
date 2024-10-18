@@ -30,6 +30,11 @@ export const Container = styled.section`
   @media (min-width: 577px) and (max-width: 992px) {
     padding: 1.5rem; /* Ajuste do padding */
   }
+
+
+  @media (min-width: 1401px) {
+  margin-top: -100px;
+  }
 `;
 
 
@@ -57,7 +62,13 @@ export const ContentWrapper = styled.div`
     padding: 1rem; /* Ajusta o padding */
   }
 
+  @media (min-width: 993px) and (max-width: 1200px) {
+    margin-top: 120px;
+  }
 
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    margin-top: 120px;
+  }
   
   @media (min-width: 1401px){
   margin-top: 150px;

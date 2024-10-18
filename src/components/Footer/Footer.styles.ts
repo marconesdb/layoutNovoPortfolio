@@ -11,11 +11,11 @@ export const FooterContent = styled.div`
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  max-width:73.7%; /* Limita a largura máxima do footer */
+  max-width:100%; /* Limita a largura máxima do footer */
   height: 200px; /* Ajusta a altura automaticamente */
   padding: 15px; /* Alinha o padding */
   flex-wrap: wrap; /* Permite que os itens se reorganizem */
-  margin-top: 40px;
+  
 
 
   @media (min-width: 360px) and (max-width: 768px){
@@ -25,8 +25,7 @@ export const FooterContent = styled.div`
     align-items: center;
     justify-content: center;
     height: 400px;
-    margin-bottom: 30px;
-    
+ 
   }
  
   @media (min-width: 577px) and (max-width: 768px) {
@@ -49,18 +48,32 @@ export const FooterContent = styled.div`
 
   @media (min-width: 993px) and (max-width: 1200px) {
     max-width: 100%;
-    max-height: 200px;
+    /* max-height: 200px; */
     padding: 30px;
     justify-content: space-between;
-    margin-top: 0;
+    margin-top: 0px;
+    height: 400px;
+    
   }
 
   @media (min-width: 1201px) and (max-width: 1400px) {
-    max-width: 75%;
+    max-width: 100%;
     height: 200px;
     padding: 35px;
     justify-content: space-between;
     margin-top: 0;
+    
+
+  }
+
+
+  @media (min-width: 1401px) {
+    max-width: 100%;
+    height: 200px;
+    padding: 35px;
+    justify-content: space-between;
+    margin-top: 0;
+     
   }
 `;
 

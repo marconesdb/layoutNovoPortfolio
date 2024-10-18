@@ -34,12 +34,12 @@ export const VerticalLine = styled.div`
   /* transform: translateY(-2150px); */
 
   @media (min-width:1201px) and (max-width:1400px) {
-    margin-top: -2520px;
+    margin-top: -5430px;
   }
 
 
   @media (min-width: 1401px) { 
-    margin-top: -1940px;
+    margin-top: -4810px;
   }
 `;
 

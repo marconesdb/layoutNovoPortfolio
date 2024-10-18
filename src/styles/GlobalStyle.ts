@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
 
   body, button, input {
   font-family: 'Fira Code', sans-serif;
+ 
   }
 
 
