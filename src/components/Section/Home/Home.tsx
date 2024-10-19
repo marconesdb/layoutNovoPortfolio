@@ -1,5 +1,6 @@
-// Home.tsx
+import { useTranslation } from 'react-i18next'; // Importar o hook de tradução
 import fotoPerfil from '../../../assets/images/Marcone.png';
+
 
 import { 
   Container, 
@@ -15,21 +16,25 @@ import {
   Logo, 
 } from '../Home/Home.styles';
 
+
+const handleScrollToInicio = () => {
+  const inicioElement = document.getElementById('inicio');
+  if (inicioElement) {
+    inicioElement.scrollIntoView({ behavior:'smooth' });
+  }
+};
+
 const Home = () => {
+  const { t } = useTranslation(); // Usar o hook de tradução
+
   return (
     <Container id="inicio">
       <ContentWrapper>
         <TextSection>
-        <Title>
-          Marcone S. de Brito é<br />
-          <span>Analista de Sistemas</span> e<br />
-          <span>Desenvolvedor <br/> Front-end</span>
-        </Title>
-
-
-          <Subtitle>“Transformo ideias em realidade, codificando a Web com bytes de inovação.”</Subtitle>
+          <Title dangerouslySetInnerHTML={{ __html: t('home.title') }} /> {/* Usando dangerouslySetInnerHTML para manter a formatação */}
+          <Subtitle>{t('home.subtitle')}</Subtitle>
           <ContactButton href="https://wa.me/5538992182727" target="_blank" rel="noopener noreferrer">
-            Fale comigo!
+            {t('home.contactButton')} {/* Usando tradução */}
           </ContactButton>
         </TextSection>
         <ImageSection>
@@ -47,7 +52,7 @@ const Home = () => {
             <Image src={fotoPerfil} alt="Foto - Marcone" />
             <PortfolioTag>
               <ImageQuadrado />
-              <p>Atualmente trabalhando em projetos <span>Sociais.</span></p>
+              <p dangerouslySetInnerHTML={{ __html: t('home.portfolioTag') }} /> {/* Usando dangerouslySetInnerHTML para manter a formatação */}
             </PortfolioTag>
           </div>
         </ImageSection>

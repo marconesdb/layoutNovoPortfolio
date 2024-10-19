@@ -19,7 +19,7 @@ import {
 
 const Skills = () => {
   return (
-    <Container id="#">
+    <Container id="skills">
       <ContentWrapper>
       <Title>
         <span>#</span>

@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "about": "Acerca",
+    "contact": "Contacto",
+    "language": "Idioma"
+  },
+  "home": {
+    "title": "Marcone S. de Brito es<br /><span class='highlight'> Analista de Sistemas </span> y<br /><span className='highlight'> Desarrollador <br/> Front-end </span>",
+    "subtitle": "“Transformo ideas en realidad, codificando la Web con bytes de innovación.”",
+    "contactButton": "¡Contáctame!",
+    "portfolioTag": "Actualmente trabajando en <span>proyectos sociales.</span>"
+  }
+}

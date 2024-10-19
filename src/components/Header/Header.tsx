@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import { useTranslation } from 'react-i18next'; // Importar o hook de tradução
 import * as S from '../../styles/LayoutStyles';
 import {
   Logo,
@@ -17,7 +18,7 @@ import {
 } from './Header.styles';
 
 import { FaGithub, FaLinkedin, FaWhatsapp, FaGlobe } from 'react-icons/fa';
-import logo from '../../assets/images/Logo.svg'; // Descomentar logo se necessário
+import logo from '../../assets/images/Logo.svg';
 
 type SocialLink = {
   href: string;
@@ -33,11 +34,19 @@ const socialLinks: SocialLink[] = [
 ];
 
 const Header = () => {
+  const { t, i18n } = useTranslation(); // Usar o hook de tradução
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => {
+    console.log('Menu toggled'); // Verifica se a função é chamada
+    setIsOpen(!isOpen);
+  };
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng); // Função para trocar o idioma
+  };
 
   return (
     <S.Header>
@@ -53,29 +62,31 @@ const Header = () => {
 
       <NavMenu isOpen={isOpen}>
         <Nav>
-          <ScrollLink to="inicio" smooth={true} duration={500} offset={-70}>
-            <NavItemHome>Início</NavItemHome>
+          <ScrollLink to="inicio" smooth={true} duration={500} offset={-70} onClick={() => console.log('Link "Início" clicado')}>
+            <NavItemHome>{t('navbar.home')}</NavItemHome> {/* Usando tradução */}
           </ScrollLink>
           <ScrollLink to="projetos" smooth={true} duration={500} offset={-70}>
-            <NavItem>Projetos</NavItem>
+            <NavItem>{t('navbar.projects')}</NavItem>
           </ScrollLink>
           <ScrollLink to="skills" smooth={true} duration={500} offset={-10}>
-            <NavItem>Skills</NavItem>
+            <NavItem>{t('navbar.skills')}</NavItem>
           </ScrollLink>
           <ScrollLink to="sobre" smooth={true} duration={500} offset={-270}>
-            <NavItem>Sobre</NavItem>
+            <NavItem>{t('navbar.about')}</NavItem>
           </ScrollLink>
           <ScrollLink to="contato" smooth={true} duration={500} offset={-70}>
-            <NavItem>Contato</NavItem>
+            <NavItem>{t('navbar.contact')}</NavItem>
           </ScrollLink>
+
           <Dropdown>
             <DropdownToggle onClick={toggleDropdown}>
-              PT
+              {t('navbar.language')}
               <span>{dropdownOpen ? '˰' : 'ˬ'}</span>
             </DropdownToggle>
             <DropdownMenu isOpen={dropdownOpen}>
-              <DropdownItem href="#en">EN</DropdownItem>
-              <DropdownItem href="#es">ES</DropdownItem>
+              <DropdownItem onClick={() => changeLanguage('en')}>EN</DropdownItem> {/* Troca para inglês */}
+              <DropdownItem onClick={() => changeLanguage('es')}>ES</DropdownItem> {/* Troca para espanhol */}
+              <DropdownItem onClick={() => changeLanguage('pt')}>PT</DropdownItem> {/* Troca para português */}
             </DropdownMenu>
           </Dropdown>
         </Nav>

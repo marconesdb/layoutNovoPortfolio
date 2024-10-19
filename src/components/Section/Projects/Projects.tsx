@@ -80,6 +80,8 @@ const projects: Project[] = [
   },
 ];
 
+
+
 function ProjectCard({ image, subtitle, title, description, githubLink, externalLink }: Project) {
   return (
     <Card>
@@ -107,13 +109,15 @@ function ProjectCard({ image, subtitle, title, description, githubLink, external
 
 const Projects = () => {
   return (
-    <Container id="#">
+    <Container id="projetos">
       <ContentWrapper>
+     
         <Title>
           <span>#</span>
           <p>Projetos</p>
           <Line />
         </Title>
+       
         <Cards>
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />

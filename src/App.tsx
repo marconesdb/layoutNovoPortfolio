@@ -16,8 +16,7 @@ function App() {
         <SidebarLeft />
         <Main />
         <Footer />
-        <SidebarRight />
-       
+        <SidebarRight /> 
       </S.Container>
     </>
   );

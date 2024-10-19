@@ -20,8 +20,9 @@ export const Container = styled.section`
   width: 100%;  /* Ocupar 100% da largura do Main */
   max-width: 100%; /* Limitar a largura máxima para prevenir overflow */
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
-  overflow-x: hidden; /* Prevenir rolagem horizontal no container */
- 
+  overflow-x: hidden;
+   /* Prevenir rolagem horizontal no container */
+  
 
   @media (min-width: 360px) and (max-width: 576px) {
     padding: 1rem; 
@@ -36,6 +37,13 @@ export const Container = styled.section`
   margin-top: -100px;
   }
 `;
+
+export const highlight = styled.section`
+
+  background-color: #A8990F; /* Altere para a cor desejada */
+  
+`;
+
 
 
 

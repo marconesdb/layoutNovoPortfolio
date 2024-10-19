@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "about": "About",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Marcone S. de Brito is<br /> <span class='highlight'>Analyst of Systems </span>and<br /> <span className='highlight'>Front-end<br/> Developer</span>",
+    "subtitle": "“I turn ideas into reality by coding the web with bytes of innovation.”",
+    "contactButton": "Contact me!",
+    "portfolioTag": "Currently working on <span>Social projects.</span>"
+  }
+}

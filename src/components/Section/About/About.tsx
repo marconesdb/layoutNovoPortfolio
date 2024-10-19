@@ -13,7 +13,7 @@ import { ContactButton } from '../Home/Home.styles';
 
 const About = () => {
   return (
-    <Container id="#">
+    <Container id="sobre">
       <ContentWrapper>
       <Title>
           <span>#</span>

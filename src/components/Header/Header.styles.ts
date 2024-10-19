@@ -107,6 +107,7 @@ export const NavMenu = styled.div<{ isOpen: boolean }>`
 export const Dropdown = styled.div`
   position: relative;
   display: inline-block;
+  cursor: pointer;
 `;
 
 export const DropdownToggle = styled.div`
