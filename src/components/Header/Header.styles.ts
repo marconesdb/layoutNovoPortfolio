@@ -25,7 +25,7 @@ export const Nav = styled.nav`
 
 export const NavItem = styled.a`
   color: #ABB2BF;
-  text-decoration: none;
+  text-decoration: none; // Remover underline
   font-size: 18px;
   position: relative;
   transition: color 0.3s ease;
@@ -46,6 +46,11 @@ export const NavItem = styled.a`
 
 export const NavItemHome = styled(NavItem)`
   color: #fff;
+`;
+
+export const StyledLink = styled.a`
+  text-decoration: none; // Remover underline
+  color: inherit; // Para herdar a cor do texto do componente pai
 `;
 
 export const Hamburger = styled.div<{ isOpen: boolean }>`
@@ -154,7 +159,7 @@ export const DropdownMenu = styled.div<{ isOpen: boolean }>`
 
 export const DropdownItem = styled.a`
   color: #ABB2BF;
-  text-decoration: none;
+  text-decoration: none; // Remover underline
   display: block;
   padding: 10px;
   font-size: 16px;

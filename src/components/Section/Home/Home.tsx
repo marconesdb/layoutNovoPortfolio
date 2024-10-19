@@ -17,12 +17,6 @@ import {
 } from '../Home/Home.styles';
 
 
-const handleScrollToInicio = () => {
-  const inicioElement = document.getElementById('inicio');
-  if (inicioElement) {
-    inicioElement.scrollIntoView({ behavior:'smooth' });
-  }
-};
 
 const Home = () => {
   const { t } = useTranslation(); // Usar o hook de tradução

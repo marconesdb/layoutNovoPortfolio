@@ -9,9 +9,11 @@ import Formulario from '../Section/Formulario/Formulario';
 
 
 
+
 function Main() {
   return (
     <S.Main>
+  
      <Home/> 
     <Citacao/>
      <Projects/>

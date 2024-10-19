@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
 import { useTranslation } from 'react-i18next'; // Importar o hook de tradução
 import * as S from '../../styles/LayoutStyles';
 import {
@@ -15,6 +14,7 @@ import {
   DropdownItem,
   ImageContainer,
   SvgLink,
+  StyledLink, // Importar StyledLink
 } from './Header.styles';
 
 import { FaGithub, FaLinkedin, FaWhatsapp, FaGlobe } from 'react-icons/fa';
@@ -62,21 +62,21 @@ const Header = () => {
 
       <NavMenu isOpen={isOpen}>
         <Nav>
-          <ScrollLink to="inicio" smooth={true} duration={500} offset={-70} onClick={() => console.log('Link "Início" clicado')}>
+          <StyledLink href="#inicio" onClick={() => console.log('Link "Início" clicado')}>
             <NavItemHome>{t('navbar.home')}</NavItemHome> {/* Usando tradução */}
-          </ScrollLink>
-          <ScrollLink to="projetos" smooth={true} duration={500} offset={-70}>
+          </StyledLink>
+          <StyledLink href="#projetos" onClick={() => console.log('Link "Projetos" clicado')}>
             <NavItem>{t('navbar.projects')}</NavItem>
-          </ScrollLink>
-          <ScrollLink to="skills" smooth={true} duration={500} offset={-10}>
+          </StyledLink>
+          <StyledLink href="#skills" onClick={() => console.log('Link "Skills" clicado')}>
             <NavItem>{t('navbar.skills')}</NavItem>
-          </ScrollLink>
-          <ScrollLink to="sobre" smooth={true} duration={500} offset={-270}>
+          </StyledLink>
+          <StyledLink href="#sobre" onClick={() => console.log('Link "Sobre" clicado')}>
             <NavItem>{t('navbar.about')}</NavItem>
-          </ScrollLink>
-          <ScrollLink to="contato" smooth={true} duration={500} offset={-70}>
+          </StyledLink>
+          <StyledLink href="#contato" onClick={() => console.log('Link "Contato" clicado')}>
             <NavItem>{t('navbar.contact')}</NavItem>
-          </ScrollLink>
+          </StyledLink>
 
           <Dropdown>
             <DropdownToggle onClick={toggleDropdown}>
