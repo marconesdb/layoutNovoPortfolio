@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'; // Importar o hook de tradução
 import { 
   FraseCitacao,
   Container, 
@@ -7,19 +8,21 @@ import {
 } from '../Citacao/Citacao.styles';
 
 const Citacao = () => {
+  const { t } = useTranslation(); // Usar o hook de tradução
+
   return (
-    <Container id="#">
+    <Container id="citacao">
       <ContentWrapper>
-      <ContainerCitacao className='ContainerCitacao'>
-      
-      <DivCitacao>
-      <FraseCitacao>
-        <span className='aspasSuperior'>❝</span>A única maneira de fazer <span className='textCitacao'> um excelente trabalho é </span> amar o que você faz.<span className='aspasInferior'>❞</span><span className='autor'>- Steve Jobs</span>
-      </FraseCitacao>
-      </DivCitacao>
-    
-     </ContainerCitacao>
-   
+        <ContainerCitacao className='ContainerCitacao'>
+          <DivCitacao>
+            <FraseCitacao>
+              <span className='aspasSuperior'>❝</span>
+              {t('quote.text')} {/* Usar tradução aqui */}
+              <span className='aspasInferior'>❞</span>
+              <span className='autor'>{t('quote.author')}</span> {/* Usar tradução do autor aqui */}
+            </FraseCitacao>
+          </DivCitacao>
+        </ContainerCitacao>
       </ContentWrapper>
     </Container>
   );

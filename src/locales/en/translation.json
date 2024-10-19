@@ -12,5 +12,12 @@
     "subtitle": "“I turn ideas into reality by coding the web with bytes of innovation.”",
     "contactButton": "Contact me!",
     "portfolioTag": "Currently working on <span>Social projects.</span>"
-  }
+  },
+  
+    "quote": {
+      "text": "The only way to do great work is to love what you do.",
+      "author": "- Steve Jobs"
+    }
+  
+  
 }
