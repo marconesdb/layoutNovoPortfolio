@@ -53,6 +53,28 @@
           "title": "Scientific Calculator",
           "description": "Example of a Scientific Calculator."
         }
-      }
+      },
+
+
+        "skills": {
+          "title": "Skills",
+          "categories": {
+            "languages": "Languages",
+            "databases": "Databases",
+            "others": "Others",
+            "tools": "Tools",
+            "frameworks": "Frameworks"
+          },
+          "items": {
+            "languages": "TypeScript, JavaScript",
+            "databases": "MySQL, PostgreSQL",
+            "others": "HTML, CSS, EJS, SCSS",
+            "tools": "VSCode, Insomnia, Figma, Font Awesome",
+            "frameworks": "Tailwind.CSS, Bootstrap, React.JS"
+          }
+        }
+      
+      
+
     }
   

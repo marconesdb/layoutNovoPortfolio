@@ -55,6 +55,26 @@
           "title": "Calculadora Científica",
           "description": "Ejemplo de una Calculadora Científica."
         }
-      }
+      },
+
+        "skills": {
+          "title": "Habilidades",
+          "categories": {
+            "languages": "Lenguajes",
+            "databases": "Bases de Datos",
+            "others": "Otros",
+            "tools": "Herramientas",
+            "frameworks": "Frameworks"
+          },
+          "items": {
+            "languages": "TypeScript, JavaScript",
+            "databases": "MySQL, PostgreSQL",
+            "others": "HTML, CSS, EJS, SCSS",
+            "tools": "VSCode, Insomnia, Figma, Font Awesome",
+            "frameworks": "Tailwind.CSS, Bootstrap, React.JS"
+          }
+        }
+      
+      
     }
     
