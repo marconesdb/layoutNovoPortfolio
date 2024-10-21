@@ -130,12 +130,15 @@
                   "placeholder": "Digite aqui sua mensagem..."
                 },
                 "button": "Enviar"
-              }
-            
-            
+              },
 
-        
-
+                "footer": {
+                  "name": "Marcone S. de Brito",
+                  "email": "marconebritt@gmail.com",
+                  "profession": "Analista de Sistemas e Desenvolvedor Front-end",
+                  "copyright": "Copyright {{year}}. Desenvolvido por: Marcone S. de Brito",
+                  "socialNetworks": "Redes Sociais"
+                }
 
 
         }
