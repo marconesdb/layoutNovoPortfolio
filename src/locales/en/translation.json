@@ -72,9 +72,72 @@
             "tools": "VSCode, Insomnia, Figma, Font Awesome",
             "frameworks": "Tailwind.CSS, Bootstrap, React.JS"
           }
-        }
-      
-      
+        },
 
-    }
+
+    
+          "about": {
+            "title": "About me",
+            "greeting": "Hello!",
+            "introduction": "I'm Marcone S. de Brito.",
+            "firstParagraph": {
+              "prefix": "A",
+              "content": " Front-end Developer and Systems Analyst, technology enthusiast, with a solid academic background and extensive practical experience. I have a postgraduate degree in Big Data, Data Science, Machine Learning, and Artificial Intelligence, and I am located in Montes Claros - MG, Brazil."
+            },
+            "secondParagraph": {
+              "prefix": "I have",
+              "content": " experience creating responsive websites and transforming ideas into modern, engaging web experiences. My focus is on developing intuitive and accessible interfaces, ensuring smooth and pleasant navigation for users."
+            },
+            "thirdParagraph": {
+              "prefix": "In the",
+              "content": " past few years, I have worked with a variety of clients, helping them build a strong and efficient online presence. In addition to mastering HTML, CSS, and JavaScript, I am constantly updating my knowledge of emerging technologies and frameworks like React to provide innovative, high-quality solutions."
+            },
+            "fourthParagraph": {
+              "prefix": "My",
+              "content": " passion for web development goes beyond coding; I also strive to understand user needs and create designs that provide real value. I am committed to continuous improvement, always seeking to learn new skills and techniques to deliver exceptional results in every project."
+            },
+            "readMore": "Read more →"
+          },
+
+          
+            "contact": {
+              "title": "Contact",
+              "intro": {
+                "prefix": "I am",
+                "content": " interested in freelance opportunities. However, if you have any other requests or questions, don't hesitate to reach out to me."
+              },
+              "sendMessage": "Send me a message:"
+            },
+
+            
+              "form": {
+                "title": "Contact me!",
+                "name": {
+                  "label": "Name:",
+                  "placeholder": "Enter your name..."
+                },
+                "email": {
+                  "label": "Email:",
+                  "placeholder": "Enter your email..."
+                },
+                "subject": {
+                  "label": "Subject:",
+                  "placeholder": "Enter a subject..."
+                },
+                "message": {
+                  "label": "Message:",
+                  "placeholder": "Type your message here..."
+                },
+                "button": "Send"
+              }
+            }
+            
+
+
+
+
+
+          
+
+        
   

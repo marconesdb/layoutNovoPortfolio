@@ -73,8 +73,67 @@
             "tools": "VSCode, Insomnia, Figma, Font Awesome",
             "frameworks": "Tailwind.CSS, Bootstrap, React.JS"
           }
-        }
+        },
+
+          "about": {
+            "title": "Sobre mí",
+            "greeting": "¡Hola!",
+            "introduction": "Soy Marcone S. de Brito.",
+            "firstParagraph": {
+              "prefix": "Un",
+              "content": "Desarrollador Front-end y Analista de Sistemas, entusiasta de la tecnología, con una sólida formación académica y amplia experiencia práctica. Tengo un posgrado en Big Data, Ciencia de Datos, Machine Learning e Inteligencia Artificial, y estoy ubicado en Montes Claros - MG, Brasil."
+            },
+            "secondParagraph": {
+              "prefix": "Tengo",
+              "content": "experiencia en la creación de sitios web responsivos y en la transformación de ideas en experiencias web modernas y atractivas. Mi enfoque es desarrollar interfaces intuitivas y accesibles, garantizando una navegación fluida y agradable para los usuarios."
+            },
+            "thirdParagraph": {
+              "prefix": "En los",
+              "content": "últimos años, he trabajado con una variedad de clientes, ayudándoles a construir una presencia en línea sólida y eficiente. Además de dominar HTML, CSS y JavaScript, actualizo constantemente mis conocimientos en tecnologías emergentes y frameworks como React, para ofrecer soluciones innovadoras y de alta calidad."
+            },
+            "fourthParagraph": {
+              "prefix": "Mi",
+              "content": "pasión por el desarrollo web va más allá de la codificación; también me esfuerzo por comprender las necesidades de los usuarios y crear diseños que ofrezcan un valor real. Estoy comprometido con la mejora continua, siempre buscando aprender nuevas habilidades y técnicas para entregar resultados excepcionales en cada proyecto."
+            },
+            "readMore": "Leer más →"
+          },
+
+
+            "contact": {
+              "title": "Contacto",
+              "intro": {
+                "prefix": "Estoy",
+                "content": " interesado en oportunidades de freelance. Sin embargo, si tiene alguna otra solicitud o pregunta, no dude en ponerse en contacto conmigo."
+              },
+              "sendMessage": "Envíame un mensaje:"
+            },
+
+
+              "form": {
+                "title": "¡Contáctame!",
+                "name": {
+                  "label": "Nombre:",
+                  "placeholder": "Ingresa tu nombre..."
+                },
+                "email": {
+                  "label": "Correo electrónico:",
+                  "placeholder": "Ingresa tu correo electrónico..."
+                },
+                "subject": {
+                  "label": "Asunto:",
+                  "placeholder": "Ingresa un asunto..."
+                },
+                "message": {
+                  "label": "Mensaje:",
+                  "placeholder": "Escribe tu mensaje aquí..."
+                },
+                "button": "Enviar"
+              }
+            }
+            
+  
+  
+        
+          
       
-      
-    }
     

@@ -1,4 +1,3 @@
-
 import { 
   Container, 
   ContainerAbout, 
@@ -6,52 +5,67 @@ import {
   ContainerEsquerdo, 
   ContentWrapper,
   Line,
-  Title, 
-   
+  Title
 } from '../About/About.styles';
 import { ContactButton } from '../Home/Home.styles';
+import { useTranslation } from 'react-i18next'; // Importar o hook de tradução
 
 const About = () => {
+  const { t } = useTranslation(); // Usar o hook de tradução
+
   return (
     <Container id="sobre">
       <ContentWrapper>
-      <Title>
+        <Title>
           <span>#</span>
-          <p>Sobre mim</p>
+          <p>{t('about.title')}</p> {/* Tradução para o título "Sobre mim" */}
           <Line />
         </Title>
-    <ContainerAbout>
-    <ContainerEsquerdo>
-      <p className='texto-titulo'>Olá ! <br/> <span className='estilo-p'>Eu sou o Marcone S. de Brito. </span></p>
-        <p  className='p-1'> <span className='recuo'>Um</span> desenvolvedor Front-end e Analista de Sistemas, entusiasta de tecnologia, com uma sólida formação acadêmica e ampla experiência prática. Possuo pós-graduação em Big Data, Ciência de Dados, Machine Learning e Inteligência Artificial, e estou localizado em Montes Claros - MG, Brasil.  
-        <p className='p-1'><span className='recuo'>Tenho</span> experiência na criação de sites responsivos e na transformação de ideias em experiências web modernas e envolventes. Meu foco é desenvolver interfaces intuitivas e acessíveis, garantindo uma navegação fluida e agradável para os usuários.</p>
-        <p className='p-2'><span className='recuo'>Nos</span> últimos anos, trabalhei com uma variedade de clientes, ajudando-os a construir uma presença online sólida e eficiente. Além de dominar HTML, CSS e JavaScript, estou constantemente atualizando meus conhecimentos em tecnologias emergentes e frameworks como React, para oferecer soluções inovadoras e de alta qualidade.</p>
-        
-        <p className='p-2'><span className='recuo'>Minha</span> paixão pelo desenvolvimento web vai além da codificação; também me esforço para entender as necessidades dos usuários e criar designs que ofereçam valor real. Estou comprometido com a melhoria contínua, sempre buscando aprender novas habilidades e técnicas para entregar resultados excepcionais em cada projeto.</p>
-        </p>
+        <ContainerAbout>
+          <ContainerEsquerdo>
+            <p className='texto-titulo'>
+              {t('about.greeting')} <br/>
+              <span className='estilo-p'>{t('about.introduction')}</span>
+            </p>
+            <p className='p-1'>
+              <span className='recuo'>{t('about.firstParagraph.prefix')}</span> 
+              {t('about.firstParagraph.content')}
+            </p>
+            <p className='p-1'>
+              <span className='recuo'>{t('about.secondParagraph.prefix')}</span> 
+              {t('about.secondParagraph.content')}
+            </p>
+            <p className='p-2'>
+              <span className='recuo'>{t('about.thirdParagraph.prefix')}</span> 
+              {t('about.thirdParagraph.content')}
+            </p>
+            <p className='p-2'>
+              <span className='recuo'>{t('about.fourthParagraph.prefix')}</span> 
+              {t('about.fourthParagraph.content')}
+            </p>
+            
+            <a href="https://wa.me/5538992182727" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+              <ContactButton>{t('about.readMore')}</ContactButton> {/* Tradução para o botão "Leia mais" */}
+            </a>
+          </ContainerEsquerdo>
+          
+          <ContainerDireito>
+            <div className='cubo1'>
+              {/* Criação do cubo */}
+              {[...Array(25)].map((_, index) => (
+                <div key={index} className="dot"></div>
+              ))}
+            </div>
 
-         {/* Direcionar para a página que tem o curriculo online em HTML e CSS */}
-      <a href="https://wa.me/5538992182727" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-          <ContactButton>Leia mais →</ContactButton>
-      </a>
-    </ContainerEsquerdo>
-    <ContainerDireito>
-    <div className='cubo1'>
-        {/* Criação do cubo */}
-        {[...Array(25)].map((_, index) => (
-        <div key={index} className="dot"></div>
-        ))}
-    </div>
-
-    <div className='cubo2'>
-        {/* Criação do cubo */}
-        {[...Array(25)].map((_, index) => (
-        <div key={index} className="dot"></div>
-        ))}
-    </div>
-    </ContainerDireito>
-    </ContainerAbout>
-    </ContentWrapper>
+            <div className='cubo2'>
+              {/* Criação do cubo */}
+              {[...Array(25)].map((_, index) => (
+                <div key={index} className="dot"></div>
+              ))}
+            </div>
+          </ContainerDireito>
+        </ContainerAbout>
+      </ContentWrapper>
     </Container>
   );
 };
