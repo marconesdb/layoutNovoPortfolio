@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'; // Importar o hook de tradução
 import { 
   Container, 
   ContentWrapper, 
@@ -9,7 +10,7 @@ import {
   CardTitle, 
   CardText, 
   CardButtons, 
-  CardSubtitle, 
+  CardSubtitle 
 } from './Projects.styles';
 
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
@@ -32,64 +33,64 @@ type Project = {
 const projects: Project[] = [
   {
     image: Image1,
-    subtitle: "HTML, Tailwind.CSS e Javascript",
-    title: "Laços de Amor",
-    description: "Este é um site feito voluntariamente para a Instituição Laços de Amor.",
-    githubLink: "https://github.com/marconesdb/site-lacosdeamor",
-    externalLink: "https://site-lacosdeamor.vercel.app/"
+    subtitle: 'project.laçosDeAmor.subtitle', // Chave de tradução
+    title: 'project.laçosDeAmor.title',
+    description: 'project.laçosDeAmor.description',
+    githubLink: 'https://github.com/marconesdb/site-lacosdeamor',
+    externalLink: 'https://site-lacosdeamor.vercel.app/',
   },
   {
     image: Image2,
-    subtitle: "HTML, Tailwind.CSS e React.JS",
-    title: "Solar de Jesus",
-    description: "Este é um site feito voluntariamente para a Instituição de Caridade Solar de Jesus.",
-    githubLink: "https://github.com/marconesdb/solardejesus-ecommerce",
-    externalLink: "https://solardejesus-ecommerce.vercel.app/"
+    subtitle: 'project.solarDeJesus.subtitle',
+    title: 'project.solarDeJesus.title',
+    description: 'project.solarDeJesus.description',
+    githubLink: 'https://github.com/marconesdb/solardejesus-ecommerce',
+    externalLink: 'https://solardejesus-ecommerce.vercel.app/',
   },
   {
     image: Image3,
-    subtitle: "HTML, Tailwind.CSS e Javascript",
-    title: "Karina Cevalles",
-    description: "Protótipo de um site para a Advogada Karine Cevalles.",
-    githubLink: "https://github.com/marconesdb/site-karinaCevalles",
-    externalLink: "https://site-karina-cevalles.vercel.app/"
+    subtitle: 'project.karinaCevalles.subtitle',
+    title: 'project.karinaCevalles.title',
+    description: 'project.karinaCevalles.description',
+    githubLink: 'https://github.com/marconesdb/site-karinaCevalles',
+    externalLink: 'https://site-karina-cevalles.vercel.app/',
   },
   {
     image: Image4,
-    subtitle: "HTML, Tailwind.CSS e Javascript",
-    title: "T. da Última Hora",
-    description: "Protótipo de um site para a Instituição de Caridade Trabalhadores da Última Hora.",
-    githubLink: "https://github.com/marconesdb/SiteTrabalhadoresDaUltimaHora",
-    externalLink: "https://marconesdb.github.io/SiteTrabalhadoresDaUltimaHora/"
+    subtitle: 'project.trabalhadores.subtitle',
+    title: 'project.trabalhadores.title',
+    description: 'project.trabalhadores.description',
+    githubLink: 'https://github.com/marconesdb/SiteTrabalhadoresDaUltimaHora',
+    externalLink: 'https://marconesdb.github.io/SiteTrabalhadoresDaUltimaHora/',
   },
   {
     image: Image5,
-    subtitle: "HTML e CSS",
-    title: "Tom's Jazz School",
-    description: "Exemplo de uma LandPage.",
-    githubLink: "https://github.com/marconesdb/landPageOneBitCode",
-    externalLink: "https://marconesdb.github.io/landPageOneBitCode/"
+    subtitle: 'project.tomsJazzSchool.subtitle',
+    title: 'project.tomsJazzSchool.title',
+    description: 'project.tomsJazzSchool.description',
+    githubLink: 'https://github.com/marconesdb/landPageOneBitCode',
+    externalLink: 'https://marconesdb.github.io/landPageOneBitCode/',
   },
   {
     image: Image6,
-    subtitle: "HTML, CSS, Javascript",
-    title: "Cal. Científica",
-    description: "Exemplo de uma Calculadora Científica.",
-    githubLink: "https://github.com/marconesdb/CalculadoraCientifica",
-    externalLink: "https://marconesdb.github.io/CalculadoraCientifica/"
+    subtitle: 'project.calCientifica.subtitle',
+    title: 'project.calCientifica.title',
+    description: 'project.calCientifica.description',
+    githubLink: 'https://github.com/marconesdb/CalculadoraCientifica',
+    externalLink: 'https://marconesdb.github.io/CalculadoraCientifica/',
   },
 ];
 
-
-
 function ProjectCard({ image, subtitle, title, description, githubLink, externalLink }: Project) {
+  const { t } = useTranslation(); // Usar o hook de tradução
+
   return (
     <Card>
-      <CardImage src={image} alt={`Imagem do ${title}`} />
-      <CardSubtitle>{subtitle}</CardSubtitle>
+      <CardImage src={image} alt={`Imagem do ${t(title)}`} />
+      <CardSubtitle>{t(subtitle)}</CardSubtitle> {/* Traduzindo subtítulo */}
       <CardText>
-        <CardTitle>{title}</CardTitle>
-        {description}
+        <CardTitle>{t(title)}</CardTitle> {/* Traduzindo título */}
+        {t(description)} {/* Traduzindo descrição */}
       </CardText>
       <CardButtons>
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
@@ -108,16 +109,16 @@ function ProjectCard({ image, subtitle, title, description, githubLink, external
 }
 
 const Projects = () => {
+  const { t } = useTranslation(); // Usar o hook de tradução
+
   return (
     <Container id="projetos">
       <ContentWrapper>
-     
         <Title>
           <span>#</span>
-          <p>Projetos</p>
+          <p>{t('projects.title')}</p> {/* Traduzindo o título da seção */}
           <Line />
         </Title>
-       
         <Cards>
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />

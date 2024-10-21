@@ -17,12 +17,46 @@
     "quote": {
       "text": "A única maneira de fazer um excelente trabalho é amar o que você faz.",
       "author": "- Steve Jobs"
+    },
+
+      "projects": {
+        "title": "Projetos"
+      },
+      "project": {
+        "laçosDeAmor": {
+          "subtitle": "HTML, Tailwind.CSS e Javascript",
+          "title": "Laços de Amor",
+          "description": "Este é um site feito voluntariamente para a Instituição Laços de Amor."
+        },
+        "solarDeJesus": {
+          "subtitle": "HTML, Tailwind.CSS e React.JS",
+          "title": "Solar de Jesus",
+          "description": "Este é um site feito voluntariamente para a Instituição de Caridade Solar de Jesus."
+        },
+        "karinaCevalles": {
+          "subtitle": "HTML, Tailwind.CSS e Javascript",
+          "title": "Karina Cevalles",
+          "description": "Protótipo de um site para a Advogada Karine Cevalles."
+        },
+        "trabalhadores": {
+          "subtitle": "HTML, Tailwind.CSS e Javascript",
+          "title": "T. da Última Hora",
+          "description": "Protótipo de um site para a Instituição de Caridade Trabalhadores da Última Hora."
+        },
+        "tomsJazzSchool": {
+          "subtitle": "HTML e CSS",
+          "title": "Tom's Jazz School",
+          "description": "Exemplo de uma LandPage."
+        },
+        "calCientifica": {
+          "subtitle": "HTML, CSS, Javascript",
+          "title": "Cal. Científica",
+          "description": "Exemplo de uma Calculadora Científica."
+        }
+      }
     }
-
-  
-
-
-  }
+    
+      
   
 
 

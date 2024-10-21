@@ -18,7 +18,43 @@
     "quote": {
       "text": "La única manera de hacer un gran trabajo es amar lo que haces.",
       "author": "- Steve Jobs"
-    }
-  
+    },
 
-}
+  
+      "projects": {
+        "title": "Proyectos"
+      },
+      "project": {
+        "laçosDeAmor": {
+          "subtitle": "HTML, Tailwind.CSS y Javascript",
+          "title": "Laços de Amor",
+          "description": "Este es un sitio web creado voluntariamente para la institución Laços de Amor."
+        },
+        "solarDeJesus": {
+          "subtitle": "HTML, Tailwind.CSS y React.JS",
+          "title": "Solar de Jesús",
+          "description": "Este es un sitio web creado voluntariamente para la Institución Benéfica Solar de Jesús."
+        },
+        "karinaCevalles": {
+          "subtitle": "HTML, Tailwind.CSS y Javascript",
+          "title": "Karina Cevalles",
+          "description": "Prototipo de un sitio web para la abogada Karina Cevalles."
+        },
+        "trabalhadores": {
+          "subtitle": "HTML, Tailwind.CSS y Javascript",
+          "title": "T. de Última Hora",
+          "description": "Prototipo de un sitio web para la Institución Benéfica Trabajadores de Última Hora."
+        },
+        "tomsJazzSchool": {
+          "subtitle": "HTML y CSS",
+          "title": "Escuela de Jazz de Tom",
+          "description": "Ejemplo de una página de destino."
+        },
+        "calCientifica": {
+          "subtitle": "HTML, CSS, Javascript",
+          "title": "Calculadora Científica",
+          "description": "Ejemplo de una Calculadora Científica."
+        }
+      }
+    }
+    

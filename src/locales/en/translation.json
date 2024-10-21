@@ -17,7 +17,42 @@
     "quote": {
       "text": "The only way to do great work is to love what you do.",
       "author": "- Steve Jobs"
+    },
+    
+      "projects": {
+        "title": "Projects"
+      },
+      "project": {
+        "laçosDeAmor": {
+          "subtitle": "HTML, Tailwind.CSS and Javascript",
+          "title": "Laços de Amor",
+          "description": "This is a website made voluntarily for the Laços de Amor institution."
+        },
+        "solarDeJesus": {
+          "subtitle": "HTML, Tailwind.CSS and React.JS",
+          "title": "Solar de Jesus",
+          "description": "This is a website made voluntarily for the Solar de Jesus Charity Institution."
+        },
+        "karinaCevalles": {
+          "subtitle": "HTML, Tailwind.CSS and Javascript",
+          "title": "Karina Cevalles",
+          "description": "Prototype of a website for lawyer Karina Cevalles."
+        },
+        "trabalhadores": {
+          "subtitle": "HTML, Tailwind.CSS and Javascript",
+          "title": "T. da Última Hora",
+          "description": "Prototype of a website for the Última Hora Workers Charity Institution."
+        },
+        "tomsJazzSchool": {
+          "subtitle": "HTML and CSS",
+          "title": "Tom's Jazz School",
+          "description": "Example of a landing page."
+        },
+        "calCientifica": {
+          "subtitle": "HTML, CSS, Javascript",
+          "title": "Scientific Calculator",
+          "description": "Example of a Scientific Calculator."
+        }
+      }
     }
   
-  
-}
