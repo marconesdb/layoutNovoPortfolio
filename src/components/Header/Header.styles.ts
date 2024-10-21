@@ -51,6 +51,7 @@ export const NavItemHome = styled(NavItem)`
 export const StyledLink = styled.a`
   text-decoration: none; // Remover underline
   color: inherit; // Para herdar a cor do texto do componente pai
+  background-color: #2c3036;
 `;
 
 export const Hamburger = styled.div<{ isOpen: boolean }>`

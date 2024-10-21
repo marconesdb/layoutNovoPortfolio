@@ -1,22 +1,11 @@
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next'; // Importar o hook de tradução
+import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import * as S from '../../styles/LayoutStyles';
 import {
-  Logo,
-  Nav,
-  NavItem,
-  NavItemHome,
-  Hamburger,
-  NavMenu,
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  ImageContainer,
-  SvgLink,
-  StyledLink, // Importar StyledLink
+  Logo, Nav, NavItem, NavItemHome, Hamburger, NavMenu, Dropdown,
+  DropdownToggle, DropdownMenu, DropdownItem, ImageContainer,
+  SvgLink, StyledLink,
 } from './Header.styles';
-
 import { FaGithub, FaLinkedin, FaWhatsapp, FaGlobe } from 'react-icons/fa';
 import logo from '../../assets/images/Logo.svg';
 
@@ -33,19 +22,66 @@ const socialLinks: SocialLink[] = [
   { href: "https://www.linkedin.com/in/marconesb/", icon: FaLinkedin, label: "LinkedIn" },
 ];
 
+const sectionOffsets: { [key: string]: number } = {
+  inicio: 70,
+  projetos: 70,
+  skills: 90,
+  sobre: 100,
+  contato: 110,
+};
+
 const Header = () => {
-  const { t, i18n } = useTranslation(); // Usar o hook de tradução
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const toggleMenu = () => {
-    console.log('Menu toggled'); // Verifica se a função é chamada
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng); // Função para trocar o idioma
+    i18n.changeLanguage(lng);
+  };
+
+  useEffect(() => {
+    Object.keys(sectionOffsets).forEach(section => {
+      const element = document.getElementById(section);
+      if (!element) {
+        console.warn(`Seção com ID "${section}" não encontrada.`);
+      }
+    });
+  }, []);
+
+  const scrollToSection = (section: string) => {
+    console.log(`Tentando rolar para a seção: ${section}`);
+    const element = document.getElementById(section);
+    if (element) {
+      console.log(`Elemento encontrado para a seção: ${section}`);
+      
+      // Fechar o menu móvel se estiver aberto
+      setIsOpen(false);
+      
+      // Usar setTimeout para garantir que o menu seja fechado antes da rolagem
+      setTimeout(() => {
+        const headerOffset = sectionOffsets[section] || 70;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+
+        // Backup: usar scrollIntoView se scrollTo não funcionar
+        setTimeout(() => {
+          if (Math.abs(window.pageYOffset - offsetPosition) > 1) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
+
+      }, 100);
+    } else {
+      console.error(`Elemento não encontrado para a seção: ${section}`);
+    }
   };
 
   return (
@@ -59,38 +95,35 @@ const Header = () => {
         <span />
         <span />
       </Hamburger>
-
       <NavMenu isOpen={isOpen}>
         <Nav>
-          <StyledLink href="#inicio" onClick={() => console.log('Link "Início" clicado')}>
-            <NavItemHome>{t('navbar.home')}</NavItemHome> {/* Usando tradução */}
+          <StyledLink  onClick={() => scrollToSection('inicio')}>
+            <NavItemHome>{t('navbar.home')}</NavItemHome>
           </StyledLink>
-          <StyledLink href="#projetos" onClick={() => console.log('Link "Projetos" clicado')}>
+          <StyledLink  onClick={() => scrollToSection('projetos')}>
             <NavItem>{t('navbar.projects')}</NavItem>
           </StyledLink>
-          <StyledLink href="#skills" onClick={() => console.log('Link "Skills" clicado')}>
+          <StyledLink  onClick={() => scrollToSection('skills')}>
             <NavItem>{t('navbar.skills')}</NavItem>
           </StyledLink>
-          <StyledLink href="#sobre" onClick={() => console.log('Link "Sobre" clicado')}>
+          <StyledLink  onClick={() => scrollToSection('sobre')}>
             <NavItem>{t('navbar.about')}</NavItem>
           </StyledLink>
-          <StyledLink href="#contato" onClick={() => console.log('Link "Contato" clicado')}>
+          <StyledLink  onClick={() => scrollToSection('contato')}>
             <NavItem>{t('navbar.contact')}</NavItem>
           </StyledLink>
-
           <Dropdown>
             <DropdownToggle onClick={toggleDropdown}>
               {t('navbar.language')}
               <span>{dropdownOpen ? '˰' : 'ˬ'}</span>
             </DropdownToggle>
             <DropdownMenu isOpen={dropdownOpen}>
-              <DropdownItem onClick={() => changeLanguage('en')}>EN</DropdownItem> {/* Troca para inglês */}
-              <DropdownItem onClick={() => changeLanguage('es')}>ES</DropdownItem> {/* Troca para espanhol */}
-              <DropdownItem onClick={() => changeLanguage('pt')}>PT</DropdownItem> {/* Troca para português */}
+              <DropdownItem onClick={() => changeLanguage('en')}>EN</DropdownItem>
+              <DropdownItem onClick={() => changeLanguage('es')}>ES</DropdownItem>
+              <DropdownItem onClick={() => changeLanguage('pt')}>PT</DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </Nav>
-
         {isOpen && (
           <ImageContainer>
             {socialLinks.map(({ href, icon: Icon, label }) => (
