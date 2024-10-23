@@ -16,7 +16,7 @@ const Formulario = () => {
   const [message, setMessage] = useState('');
   const [assunto, setAssunto] = useState('');
 
-  function sendEmail(e) {
+  function sendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if(name === '' || email === '' || message === ''){
       alert("Preencha todos os campos");
