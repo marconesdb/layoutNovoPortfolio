@@ -1,5 +1,5 @@
 // Home.styles.tsx
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 // Definindo variáveis para cores
 const primaryColor = "#2c3036";
