@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'; // Importar o hook de tradução
 import fotoPerfil from '../../../assets/images/Marcone.png';
-
+import 'animate.css';
 
 import { 
   Container, 
@@ -25,14 +25,14 @@ const Home = () => {
     <Container id="inicio">
       <ContentWrapper>
         <TextSection>
-          <Title dangerouslySetInnerHTML={{ __html: t('home.title') }} /> {/* Usando dangerouslySetInnerHTML para manter a formatação */}
+          <Title  className='animate__animated animate__backInDown' dangerouslySetInnerHTML={{ __html: t('home.title') }} /> {/* Usando dangerouslySetInnerHTML para manter a formatação */}
           <Subtitle>{t('home.subtitle')}</Subtitle>
           <ContactButton href="https://wa.me/5538992182727" target="_blank" rel="noopener noreferrer">
             {t('home.contactButton')} {/* Usando tradução */}
           </ContactButton>
         </TextSection>
         <ImageSection>
-          <Logo>
+          <Logo className='animate__animated animate__rotateIn'>
             <div>
               <div className='retanguloInferior'>
                 <div className='retanguloInferiorMenor'></div>
@@ -43,7 +43,7 @@ const Home = () => {
             </div>
           </Logo>
           <div>
-            <Image src={fotoPerfil} alt="Foto - Marcone" />
+            <Image  className= '' src={fotoPerfil} alt="Foto - Marcone" />
             <PortfolioTag>
               <ImageQuadrado />
               <p dangerouslySetInnerHTML={{ __html: t('home.portfolioTag') }} /> {/* Usando dangerouslySetInnerHTML para manter a formatação */}

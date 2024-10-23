@@ -15,7 +15,7 @@ const Citacao = () => {
       <ContentWrapper>
         <ContainerCitacao className='ContainerCitacao'>
           <DivCitacao>
-            <FraseCitacao>
+            <FraseCitacao>{/* Aplicando a classe de animação */}
               <span className='aspasSuperior'>❝</span>
               {t('quote.text')} {/* Usar tradução aqui */}
               <span className='aspasInferior'>❞</span>

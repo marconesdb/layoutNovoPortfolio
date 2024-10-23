@@ -9,7 +9,7 @@ const SidebarLeft = () => {
     <S.SidebarLeft>
     <ContainerSidebarLeft>
     <VerticalLine />
-  <ImageContainer>
+  <ImageContainer className='animate__animated animate__flip'>
     {/* Suas imagens aqui */}
     <SvgLink href="https://novo-portifolio-eta.vercel.app/" target="_blank" rel="noopener noreferrer">
           {/* Adicione aqui o ícone desejado para o seu portfólio, se necessário */}

@@ -1,5 +1,6 @@
 // Home.styles.tsx
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+
 const primaryColor = "#2c3036"; 
 
 
@@ -44,6 +45,7 @@ export const ContentWrapper = styled.div`
     
   }
 `;
+
 
 
 export const ContainerCitacao = styled.div`
