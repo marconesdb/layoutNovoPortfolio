@@ -10,7 +10,7 @@
   "home": {
     "title": "Marcone S. de Brito is<br /> <span class='highlight'>Analyst of Systems </span>and<br /> <span className='highlight'>Front-end<br/> Developer</span>",
     "subtitle": "“I turn ideas into reality by coding the web with bytes of innovation.”",
-    "contactButton": "Contact me!",
+    "contactButton": "Talk to me!",
     "portfolioTag": "Currently working on <span>Social projects.</span>"
   },
   
@@ -96,7 +96,7 @@
               "prefix": "My",
               "content": " passion for web development goes beyond coding; I also strive to understand user needs and create designs that provide real value. I am committed to continuous improvement, always seeking to learn new skills and techniques to deliver exceptional results in every project."
             },
-            "readMore": "Read more →"
+            "TalkToMe": "Talk to me! →"
           },
 
           
@@ -111,7 +111,7 @@
 
             
               "form": {
-                "title": "Contact me!",
+                "title": "Talk to me!",
                 "name": {
                   "label": "Name:",
                   "placeholder": "Enter your name..."

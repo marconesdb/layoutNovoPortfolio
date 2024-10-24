@@ -11,7 +11,7 @@
   "home": {
     "title": "Marcone S. de Brito es<br /><span class='highlight'> Analista de Sistemas </span> y<br /><span className='highlight'> Desarrollador <br/> Front-end </span>",
     "subtitle": "“Transformo ideas en realidad, codificando la Web con bytes de innovación.”",
-    "contactButton": "¡Contáctame!",
+    "contactButton": "¡Habla conmigo!",
     "portfolioTag": "Actualmente trabajando en <span>proyectos sociales.</span>"
   },
   
@@ -95,7 +95,7 @@
               "prefix": "Mi",
               "content": "pasión por el desarrollo web va más allá de la codificación; también me esfuerzo por comprender las necesidades de los usuarios y crear diseños que ofrezcan un valor real. Estoy comprometido con la mejora continua, siempre buscando aprender nuevas habilidades y técnicas para entregar resultados excepcionales en cada proyecto."
             },
-            "readMore": "Leer más →"
+            "TalkToMe": "¡Habla conmigo! →"
           },
 
 
@@ -110,7 +110,7 @@
 
 
               "form": {
-                "title": "¡Contáctame!",
+                "title": "¡Habla conmigo!",
                 "name": {
                   "label": "Nombre:",
                   "placeholder": "Ingresa tu nombre..."

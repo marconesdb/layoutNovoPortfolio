@@ -45,7 +45,7 @@ const About = () => {
             </p>
             
             <a href="https://wa.me/5538992182727" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-              <ContactButton>{t('about.readMore')}</ContactButton> {/* Tradução para o botão "Leia mais" */}
+              <ContactButton>{t('about.TalkToMe')}</ContactButton> {/* Tradução para o botão "Leia mais" */}
             </a>
           </ContainerEsquerdo>
           
