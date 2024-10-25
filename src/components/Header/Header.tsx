@@ -22,14 +22,6 @@ const socialLinks: SocialLink[] = [
   { href: "https://www.linkedin.com/in/marconesb/", icon: FaLinkedin, label: "LinkedIn" },
 ];
 
-const sectionOffsets: { [key: string]: number } = {
-  inicio: 70,
-  projetos: 70,
-  skills: 90,
-  sobre: 100,
-  contato: 110,
-};
-
 const Header = () => {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +35,8 @@ const Header = () => {
   };
 
   useEffect(() => {
-    Object.keys(sectionOffsets).forEach(section => {
+    const sections = ['inicio', 'projetos', 'skills', 'sobre', 'contato'];
+    sections.forEach(section => {
       const element = document.getElementById(section);
       if (!element) {
         console.warn(`Seção com ID "${section}" não encontrada.`);
@@ -56,29 +49,12 @@ const Header = () => {
     const element = document.getElementById(section);
     if (element) {
       console.log(`Elemento encontrado para a seção: ${section}`);
-      
+
       // Fechar o menu móvel se estiver aberto
       setIsOpen(false);
       
-      // Usar setTimeout para garantir que o menu seja fechado antes da rolagem
-      setTimeout(() => {
-        const headerOffset = sectionOffsets[section] || 70;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-
-        // Backup: usar scrollIntoView se scrollTo não funcionar
-        setTimeout(() => {
-          if (Math.abs(window.pageYOffset - offsetPosition) > 1) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        }, 100);
-
-      }, 100);
+      // Rolar diretamente para a seção sem offset
+      element.scrollIntoView({ block: 'start' });
     } else {
       console.error(`Elemento não encontrado para a seção: ${section}`);
     }
@@ -97,19 +73,19 @@ const Header = () => {
       </Hamburger>
       <NavMenu isOpen={isOpen}>
         <Nav>
-          <StyledLink  onClick={() => scrollToSection('inicio')}>
+          <StyledLink onClick={() => scrollToSection('inicio')}>
             <NavItemHome>{t('navbar.home')}</NavItemHome>
           </StyledLink>
-          <StyledLink  onClick={() => scrollToSection('projetos')}>
+          <StyledLink onClick={() => scrollToSection('projetos')}>
             <NavItem>{t('navbar.projects')}</NavItem>
           </StyledLink>
-          <StyledLink  onClick={() => scrollToSection('skills')}>
-            <NavItem>{t('navbar.skills')}</NavItem>
+          <StyledLink onClick={() => scrollToSection('skills')}>
+            <NavItem>{t('navbar.habilidades')}</NavItem>
           </StyledLink>
-          <StyledLink  onClick={() => scrollToSection('sobre')}>
+          <StyledLink onClick={() => scrollToSection('sobre')}>
             <NavItem>{t('navbar.about')}</NavItem>
           </StyledLink>
-          <StyledLink  onClick={() => scrollToSection('contato')}>
+          <StyledLink onClick={() => scrollToSection('contato')}>
             <NavItem>{t('navbar.contact')}</NavItem>
           </StyledLink>
           <Dropdown>
