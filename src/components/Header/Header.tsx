@@ -1,13 +1,22 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import * as S from '../../styles/LayoutStyles';
+import styled from 'styled-components';
 import {
   Logo, Nav, NavItem, NavItemHome, Hamburger, NavMenu, Dropdown,
   DropdownToggle, DropdownMenu, DropdownItem, ImageContainer,
-  SvgLink, StyledLink,
+  SvgLink
 } from './Header.styles';
 import { FaGithub, FaLinkedin, FaWhatsapp, FaGlobe } from 'react-icons/fa';
 import logo from '../../assets/images/Logo.svg';
+
+// Styled component otimizado para mobile
+const StyledLink = styled.div`
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+`;
 
 type SocialLink = {
   href: string;
@@ -22,12 +31,17 @@ const socialLinks: SocialLink[] = [
   { href: "https://www.linkedin.com/in/marconesb/", icon: FaLinkedin, label: "LinkedIn" },
 ];
 
-const sectionOffsets: { [key: string]: number } = {
+const baseOffsets: { [key: string]: number } = {
   inicio: 70,
   projetos: 70,
   skills: 90,
   sobre: 100,
   contato: 110,
+};
+
+const getSectionOffset = (section: string) => {
+  const isVerySmallScreen = window.innerWidth < 360;
+  return isVerySmallScreen ? baseOffsets[section] * 0.8 : baseOffsets[section];
 };
 
 const Header = () => {
@@ -43,7 +57,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    Object.keys(sectionOffsets).forEach(section => {
+    Object.keys(baseOffsets).forEach(section => {
       const element = document.getElementById(section);
       if (!element) {
         console.warn(`Seção com ID "${section}" não encontrada.`);
@@ -52,33 +66,47 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (section: string) => {
-    console.log(`Tentando rolar para a seção: ${section}`);
+    // Debug info para dispositivos pequenos
+    const debugInfo = {
+      screenWidth: window.innerWidth,
+      screenHeight: window.innerHeight,
+      devicePixelRatio: window.devicePixelRatio,
+      userAgent: navigator.userAgent
+    };
+    console.log('Device Debug Info:', debugInfo);
+
     const element = document.getElementById(section);
     if (element) {
-      console.log(`Elemento encontrado para a seção: ${section}`);
-      
-      // Fechar o menu móvel se estiver aberto
+      // Fecha o menu primeiro
       setIsOpen(false);
       
-      // Usar setTimeout para garantir que o menu seja fechado antes da rolagem
-      setTimeout(() => {
-        const headerOffset = sectionOffsets[section] || 70;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-
-        // Backup: usar scrollIntoView se scrollTo não funcionar
-        setTimeout(() => {
-          if (Math.abs(window.pageYOffset - offsetPosition) > 1) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        }, 100);
-
-      }, 100);
+      // Usa requestAnimationFrame para garantir suavidade
+      requestAnimationFrame(() => {
+        const headerOffset = getSectionOffset(section);
+        
+        // Tenta primeiro com scrollIntoView
+        try {
+          element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+          
+          // Ajusta para o offset do header
+          window.scrollBy({
+            top: -headerOffset,
+            behavior: 'smooth'
+          });
+        } catch (e) {
+          // Fallback para método alternativo
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
     } else {
       console.error(`Elemento não encontrado para a seção: ${section}`);
     }
@@ -97,19 +125,34 @@ const Header = () => {
       </Hamburger>
       <NavMenu isOpen={isOpen}>
         <Nav>
-          <StyledLink  onClick={() => scrollToSection('inicio')}>
+          <StyledLink 
+            onClick={() => scrollToSection('inicio')}
+            onTouchStart={() => scrollToSection('inicio')}
+          >
             <NavItemHome>{t('navbar.home')}</NavItemHome>
           </StyledLink>
-          <StyledLink  onClick={() => scrollToSection('projetos')}>
+          <StyledLink 
+            onClick={() => scrollToSection('projetos')}
+            onTouchStart={() => scrollToSection('projetos')}
+          >
             <NavItem>{t('navbar.projects')}</NavItem>
           </StyledLink>
-          <StyledLink  onClick={() => scrollToSection('skills')}>
+          <StyledLink 
+            onClick={() => scrollToSection('skills')}
+            onTouchStart={() => scrollToSection('skills')}
+          >
             <NavItem>{t('navbar.skills')}</NavItem>
           </StyledLink>
-          <StyledLink  onClick={() => scrollToSection('sobre')}>
+          <StyledLink 
+            onClick={() => scrollToSection('sobre')}
+            onTouchStart={() => scrollToSection('sobre')}
+          >
             <NavItem>{t('navbar.about')}</NavItem>
           </StyledLink>
-          <StyledLink  onClick={() => scrollToSection('contato')}>
+          <StyledLink 
+            onClick={() => scrollToSection('contato')}
+            onTouchStart={() => scrollToSection('contato')}
+          >
             <NavItem>{t('navbar.contact')}</NavItem>
           </StyledLink>
           <Dropdown>
