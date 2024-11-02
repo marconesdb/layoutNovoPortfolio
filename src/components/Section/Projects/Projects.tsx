@@ -17,7 +17,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import Image1 from '../../../assets/images/img-projetos/Laços de Amor 1.png';
 import Image2 from '../../../assets/images/img-projetos/Image.png';
 import Image3 from '../../../assets/images/img-projetos/Karine Cevalles 2.png';
-import Image4 from '../../../assets/images/img-projetos/Trabalhadores.png';
+import Image4 from '../../../assets/images/img-projetos/desktop-preview.jpg';
 import Image5 from '../../../assets/images/img-projetos/Landpage.png';
 import Image6 from '../../../assets/images/img-projetos/Calculadora.png';
 
@@ -60,8 +60,8 @@ const projects: Project[] = [
     subtitle: 'project.trabalhadores.subtitle',
     title: 'project.trabalhadores.title',
     description: 'project.trabalhadores.description',
-    githubLink: 'https://github.com/marconesdb/SiteTrabalhadoresDaUltimaHora',
-    externalLink: 'https://marconesdb.github.io/SiteTrabalhadoresDaUltimaHora/',
+    githubLink: 'https://github.com/marconesdb/ManageLandingpage',
+    externalLink: 'https://marconesdb.github.io/ManageLandingpage/',
   },
   {
     image: Image5,
