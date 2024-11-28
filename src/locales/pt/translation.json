@@ -38,7 +38,7 @@
           "title": "Karina Cevalles",
           "description": "Protótipo de um site para a Advogada Karine Cevalles."
         },
-        "trabalhadores": {
+        "ManageLandingPage": {
           "subtitle": "HTML, Tailwind.CSS e Javascript",
           "title": "Manage Landin Page",
           "description": "Protótipo de uma Landin Page."
@@ -48,10 +48,10 @@
           "title": "Tom's Jazz School",
           "description": "Exemplo de uma LandPage."
         },
-        "calCientifica": {
-          "subtitle": "HTML, CSS, Javascript",
-          "title": "Cal. Científica",
-          "description": "Exemplo de uma Calculadora Científica."
+        "Ecommerce": {
+          "subtitle": "React.JS, Tailwind.CSS, Typescript",
+          "title": "Ecommerce",
+          "description": "Exemplo de uma Página Home de um Ecommerce."
         }
       },
 

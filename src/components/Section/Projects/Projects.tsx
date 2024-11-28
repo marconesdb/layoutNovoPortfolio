@@ -19,7 +19,7 @@ import Image2 from '../../../assets/images/img-projetos/Image.png';
 import Image3 from '../../../assets/images/img-projetos/Karine Cevalles 2.png';
 import Image4 from '../../../assets/images/img-projetos/desktop-preview.jpg';
 import Image5 from '../../../assets/images/img-projetos/Landpage.png';
-import Image6 from '../../../assets/images/img-projetos/Calculadora.png';
+import Image6 from '../../../assets/images/img-projetos/Logo-JinStore.svg';
 
 type Project = {
   image: string;
@@ -57,9 +57,9 @@ const projects: Project[] = [
   },
   {
     image: Image4,
-    subtitle: 'project.trabalhadores.subtitle',
-    title: 'project.trabalhadores.title',
-    description: 'project.trabalhadores.description',
+    subtitle: 'project.ManageLandingPage.subtitle',
+    title: 'project.ManageLandingPage.title',
+    description: 'project.ManageLandingPage.description',
     githubLink: 'https://github.com/marconesdb/ManageLandingpage',
     externalLink: 'https://marconesdb.github.io/ManageLandingpage/',
   },
@@ -73,11 +73,11 @@ const projects: Project[] = [
   },
   {
     image: Image6,
-    subtitle: 'project.calCientifica.subtitle',
-    title: 'project.calCientifica.title',
-    description: 'project.calCientifica.description',
-    githubLink: 'https://github.com/marconesdb/CalculadoraCientifica',
-    externalLink: 'https://marconesdb.github.io/CalculadoraCientifica/',
+    subtitle: 'project.Ecommerce.subtitle',
+    title: 'project.Ecommerce.title',
+    description: 'project.Ecommerce.description',
+    githubLink: 'https://github.com/marconesdb/ecommerce',
+    externalLink: 'https://ecommerce-git-main-marconesbs-projects.vercel.app/',
   },
 ];
 
