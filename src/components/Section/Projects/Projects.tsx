@@ -15,7 +15,7 @@ import {
 
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import Image1 from '../../../assets/images/img-projetos/Laços de Amor 1.png';
-import Image2 from '../../../assets/images/img-projetos/Image.png';
+import Image2 from '../../../assets/images/img-projetos/desktop-design.jpg';
 import Image3 from '../../../assets/images/img-projetos/Karine Cevalles 2.png';
 import Image4 from '../../../assets/images/img-projetos/desktop-preview.jpg';
 import Image5 from '../../../assets/images/img-projetos/Landpage.png';
@@ -41,11 +41,11 @@ const projects: Project[] = [
   },
   {
     image: Image2,
-    subtitle: 'project.solarDeJesus.subtitle',
-    title: 'project.solarDeJesus.title',
-    description: 'project.solarDeJesus.description',
-    githubLink: 'https://github.com/marconesdb/solardejesus-ecommerce',
-    externalLink: 'https://solardejesus-ecommerce.vercel.app/',
+    subtitle: 'project.InteractiveCardDetails.subtitle',
+    title: 'project.InteractiveCardDetails.title',
+    description: 'project.InteractiveCardDetails.description',
+    githubLink: 'https://github.com/marconesdb/CreditCardForm',
+    externalLink: 'https://marconesdb.github.io/CreditCardForm/',
   },
   {
     image: Image3,

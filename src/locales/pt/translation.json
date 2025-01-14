@@ -28,10 +28,10 @@
           "title": "Laços de Amor",
           "description": "Este é um site feito voluntariamente para a Instituição Laços de Amor."
         },
-        "solarDeJesus": {
-          "subtitle": "HTML, Tailwind.CSS e React.JS",
-          "title": "Solar de Jesus",
-          "description": "Este é um site feito voluntariamente para a Instituição de Caridade Solar de Jesus."
+        "InteractiveCardDetails": {
+          "subtitle": "HTML, CSS e Javascript",
+          "title": "Cartão de Crédito",
+          "description": "Este é um projeto que permite aos usuários inserir dados de cartão de crédito em um formulário para realizar uma compra."
         },
         "karinaCevalles": {
           "subtitle": "HTML, Tailwind.CSS e Javascript",
