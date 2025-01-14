@@ -16,7 +16,7 @@ type SocialLink = {
 };
 
 const socialLinks: SocialLink[] = [
-  { href: "https://novo-portifolio-eta.vercel.app/", icon: FaGlobe, label: "Website" },
+  { href: "https://layout-novo-portfolio.vercel.app/", icon: FaGlobe, label: "Website" },
   { href: "https://wa.me/5538992182727", icon: FaWhatsapp, label: "WhatsApp" },
   { href: "https://github.com/marconesdb", icon: FaGithub, label: "GitHub" },
   { href: "https://www.linkedin.com/in/marconesb/", icon: FaLinkedin, label: "LinkedIn" },
