@@ -24,12 +24,14 @@
       "projects": {
         "title": "Proyectos"
       },
+      
       "project": {
-        "laçosDeAmor": {
-          "subtitle": "HTML, Tailwind.CSS y Javascript",
-          "title": "Laços de Amor",
-          "description": "Este es un sitio web creado voluntariamente para la institución Laços de Amor."
+        "Positivus": {
+          "subtitle": "React.js, Tailwind.CSS y Typescript",
+          "title": "Página de destino Positivus",
+          "description": "Diseñada para destacar servicios de marketing digital."
         },
+
         "InteractiveCardDetails": {
         "subtitle": "HTML, CSS y Javascript",
         "title": "Tarjeta de Crédito",

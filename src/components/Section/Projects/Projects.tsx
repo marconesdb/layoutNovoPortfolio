@@ -14,7 +14,7 @@ import {
 } from './Projects.styles';
 
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import Image1 from '../../../assets/images/img-projetos/Laços de Amor 1.png';
+import Image1 from '../../../assets/images/img-projetos/Positivus.jpg';
 import Image2 from '../../../assets/images/img-projetos/desktop-design.jpg';
 import Image3 from '../../../assets/images/img-projetos/Karine Cevalles 2.png';
 import Image4 from '../../../assets/images/img-projetos/desktop-preview.jpg';
@@ -33,11 +33,11 @@ type Project = {
 const projects: Project[] = [
   {
     image: Image1,
-    subtitle: 'project.laçosDeAmor.subtitle', // Chave de tradução
-    title: 'project.laçosDeAmor.title',
-    description: 'project.laçosDeAmor.description',
-    githubLink: 'https://github.com/marconesdb/site-lacosdeamor',
-    externalLink: 'https://site-lacosdeamor.vercel.app/',
+    subtitle: 'project.Positivus.subtitle', // Chave de tradução
+    title: 'project.Positivus.title',
+    description: 'project.Positivus.description',
+    githubLink: 'https://github.com/marconesdb/PositivusLandinpage',
+    externalLink: 'https://positivus-landinpage.vercel.app',
   },
   {
     image: Image2,
