@@ -16,7 +16,7 @@ import {
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import Image1 from '../../../assets/images/img-projetos/Positivus.jpg';
 import Image2 from '../../../assets/images/img-projetos/desktop-design.jpg';
-import Image3 from '../../../assets/images/img-projetos/Karine Cevalles 2.png';
+import Image3 from '../../../assets/images/img-projetos/trabalhadores.png';
 import Image4 from '../../../assets/images/img-projetos/desktop-preview.jpg';
 import Image5 from '../../../assets/images/img-projetos/Landpage.png';
 import Image6 from '../../../assets/images/img-projetos/Logo-JinStore.svg';
@@ -47,13 +47,14 @@ const projects: Project[] = [
     githubLink: 'https://github.com/marconesdb/CreditCardForm',
     externalLink: 'https://marconesdb.github.io/CreditCardForm/',
   },
+  
   {
     image: Image3,
-    subtitle: 'project.karinaCevalles.subtitle',
-    title: 'project.karinaCevalles.title',
-    description: 'project.karinaCevalles.description',
-    githubLink: 'https://github.com/marconesdb/site-karinaCevalles',
-    externalLink: 'https://site-karina-cevalles.vercel.app/',
+    subtitle: 'project.Trabalhadores.subtitle',
+    title: 'project.Trabalhadores.title',
+    description: 'project.Trabalhadores.description',
+    githubLink: 'https://github.com/marconesdb/trabalhadores_da_ultima_hora_final',
+    externalLink: 'https://www.trabalhadoresdaultimahora.com.br/',
   },
   {
     image: Image4,

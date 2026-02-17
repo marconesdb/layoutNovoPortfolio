@@ -36,11 +36,12 @@
         "description": "This is a project that allows users to input credit card details in a form to make a purchase."
         },
 
-        "karinaCevalles": {
-          "subtitle": "HTML, Tailwind.CSS and Javascript",
-          "title": "Karina Cevalles",
-          "description": "Prototype of a website for lawyer Karina Cevalles."
+        "Trabalhadores": {
+        "subtitle": "HTML, Tailwind.CSS and Typescript",
+        "title": "Last Minute Workers",
+        "description": "Last Minute Workers Website"
         },
+        
         "ManageLandingPage": {
           "subtitle": "HTML, Tailwind.CSS and Javascript",
           "title": "Manage Landing Page",

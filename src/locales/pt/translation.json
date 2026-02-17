@@ -33,10 +33,10 @@
           "title": "Cartão de Crédito",
           "description": "Este é um projeto que permite aos usuários inserir dados de cartão de crédito em um formulário para realizar uma compra."
         },
-        "karinaCevalles": {
-          "subtitle": "HTML, Tailwind.CSS e Javascript",
-          "title": "Karina Cevalles",
-          "description": "Protótipo de um site para a Advogada Karine Cevalles."
+        "Trabalhadores": {
+          "subtitle": "HTML, Tailwind.CSS e Typescript",
+          "title": "Trabalhadores da Última Hora",
+          "description": "Site dos Trabalhadores da Última Hora"
         },
         "ManageLandingPage": {
           "subtitle": "HTML, Tailwind.CSS e Javascript",
