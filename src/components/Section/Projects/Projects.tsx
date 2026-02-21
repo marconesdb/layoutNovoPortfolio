@@ -18,7 +18,7 @@ import Image1 from '../../../assets/images/img-projetos/Positivus.jpg';
 import Image2 from '../../../assets/images/img-projetos/desktop-design.jpg';
 import Image3 from '../../../assets/images/img-projetos/trabalhadores.png';
 import Image4 from '../../../assets/images/img-projetos/desktop-preview.jpg';
-import Image5 from '../../../assets/images/img-projetos/Landpage.png';
+import Image5 from '../../../assets/images/img-projetos/SaborEcia.png';
 import Image6 from '../../../assets/images/img-projetos/Logo-JinStore.svg';
 
 type Project = {
@@ -69,8 +69,8 @@ const projects: Project[] = [
     subtitle: 'project.tomsJazzSchool.subtitle',
     title: 'project.tomsJazzSchool.title',
     description: 'project.tomsJazzSchool.description',
-    githubLink: 'https://github.com/marconesdb/landPageOneBitCode',
-    externalLink: 'https://marconesdb.github.io/landPageOneBitCode/',
+    githubLink: 'https://github.com/marconesdb/Sabor-Cia_Lanchonete',
+    externalLink: 'https://sabor-cia-lanchonete.vercel.app/',
   },
   {
     image: Image6,
