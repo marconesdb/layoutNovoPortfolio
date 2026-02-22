@@ -44,12 +44,12 @@
           "description": "Sitio de los Trabajadores de Última Hora"
         },
 
-        "ManageLandingPage": {
+        "EcofinPage": {
           "subtitle": "HTML, Tailwind.CSS y Javascript",
-          "title": "Gestionar Página de Aterrizaje",
-          "description": "Ejemplo de una página de destino."
+          "title": "Ecofin",
+          "description": "Gestor financiero doméstico"
         },
-        "tomsJazzSchool": {
+        "SaborEcia": {
           "subtitle": "HTML y CSS",
           "title": "Sabor y Cía",
           "description": "Sitio web de una cafetería"

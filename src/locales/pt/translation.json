@@ -34,19 +34,19 @@
           "description": "Este é um projeto que permite aos usuários inserir dados de cartão de crédito em um formulário para realizar uma compra."
         },
         "Trabalhadores": {
-          "subtitle": "HTML, Tailwind.CSS e Typescript",
+          "subtitle": "React.JSL, Tailwind.CSS e Typescript",
           "title": "Trabalhadores da Última Hora",
           "description": "Site dos Trabalhadores da Última Hora"
         },
-        "ManageLandingPage": {
-          "subtitle": "HTML, Tailwind.CSS e Javascript",
-          "title": "Manage Landing Page",
-          "description": "Protótipo de uma Landing Page."
+        "EcofinPage": {
+          "subtitle": "React.JS, Tailwind.CSS e Typescript",
+          "title": "Ecofin",
+          "description": "Gestor financeiro doméstico."
         },
-        "tomsJazzSchool": {
-          "subtitle": "HTML e CSS",
+        "SaborEcia": {
+          "subtitle": "React.JS,Tailwind.CSS e Typescript ",
           "title": "Sabor e Cia",
-          "description": "Site de uma lanchonete"
+          "description": "Site de uma lanchonete."
         },
         "Ecommerce": {
           "subtitle": "React.JS, Tailwind.CSS, Typescript",

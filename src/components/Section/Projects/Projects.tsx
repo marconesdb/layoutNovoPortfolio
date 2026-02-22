@@ -17,7 +17,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import Image1 from '../../../assets/images/img-projetos/Positivus.jpg';
 import Image2 from '../../../assets/images/img-projetos/desktop-design.jpg';
 import Image3 from '../../../assets/images/img-projetos/trabalhadores.png';
-import Image4 from '../../../assets/images/img-projetos/desktop-preview.jpg';
+import Image4 from '../../../assets/images/img-projetos/Ecofin.png';
 import Image5 from '../../../assets/images/img-projetos/SaborEcia.png';
 import Image6 from '../../../assets/images/img-projetos/Logo-JinStore.svg';
 
@@ -58,17 +58,17 @@ const projects: Project[] = [
   },
   {
     image: Image4,
-    subtitle: 'project.ManageLandingPage.subtitle',
-    title: 'project.ManageLandingPage.title',
-    description: 'project.ManageLandingPage.description',
-    githubLink: 'https://github.com/marconesdb/ManageLandingpage',
-    externalLink: 'https://marconesdb.github.io/ManageLandingpage/',
+    subtitle: 'project.EcofinPage.subtitle',
+    title: 'project.EcofinPage.title',
+    description: 'project.EcofinPage.description',
+    githubLink: 'https://github.com/marconesdb/ecofin_V3_GestorFinanceiroDomestico',
+    externalLink: 'https://ecofin-v3-gestor-financeiro-domesti.vercel.app/',
   },
   {
     image: Image5,
-    subtitle: 'project.tomsJazzSchool.subtitle',
-    title: 'project.tomsJazzSchool.title',
-    description: 'project.tomsJazzSchool.description',
+    subtitle: 'project.SaborEcia.subtitle',
+    title: 'project.SaborEcia.title',
+    description: 'project.SaborEcia.description',
     githubLink: 'https://github.com/marconesdb/Sabor-Cia_Lanchonete',
     externalLink: 'https://sabor-cia-lanchonete.vercel.app/',
   },

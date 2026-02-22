@@ -42,12 +42,12 @@
         "description": "Last Minute Workers Website"
         },
         
-        "ManageLandingPage": {
-          "subtitle": "HTML, Tailwind.CSS and Javascript",
-          "title": "Manage Landing Page",
-          "description": "Prototype of a Landing Page."
+        "EcofinPage": {
+          "subtitle": "React.js, Tailwind.CSS and Typescript",
+          "title": "Ecofin",
+          "description": "Domestic financial manager."
         },
-        "tomsJazzSchool": {
+        "SaborEcia": {
           "subtitle": "HTML and CSS",
           "title": "Flavor & Co.",
           "description": "Website of a snack bar"
