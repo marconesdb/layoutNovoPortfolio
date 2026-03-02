@@ -36,11 +36,12 @@
         "description": "This is a project that allows users to input credit card details in a form to make a purchase."
         },
 
-        "Trabalhadores": {
-        "subtitle": "HTML, Tailwind.CSS and Typescript",
-        "title": "Last Minute Workers",
-        "description": "Last Minute Workers Website"
-        },
+        "Sebo": {
+          "subtitle": "React.JSL, Tailwind.CSS and Typescript",
+          "title": "Sebo - Universe of Pages",
+          "description": "E-commerce website for used books."
+        }
+,
         
         "EcofinPage": {
           "subtitle": "React.js, Tailwind.CSS and Typescript",

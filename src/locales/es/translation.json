@@ -38,11 +38,12 @@
         "description": "Este es un proyecto que permite a los usuarios ingresar datos de tarjetas de crédito en un formulario para realizar una compra."
         },
 
-        "Trabalhadores": {
-          "subtitle": "HTML, Tailwind.CSS y Typescript",
-          "title": "Trabajadores de Última Hora",
-          "description": "Sitio de los Trabajadores de Última Hora"
-        },
+        "Sebo": {
+        "subtitle": "React.JSL, Tailwind.CSS y Typescript",
+        "title": "Sebo - Universo de las Páginas",
+        "description": "Sitio de comercio electrónico de libros usados."
+      },
+
 
         "EcofinPage": {
           "subtitle": "HTML, Tailwind.CSS y Javascript",

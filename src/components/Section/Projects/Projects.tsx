@@ -16,7 +16,7 @@ import {
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import Image1 from '../../../assets/images/img-projetos/Positivus.jpg';
 import Image2 from '../../../assets/images/img-projetos/desktop-design.jpg';
-import Image3 from '../../../assets/images/img-projetos/trabalhadores.png';
+import Image3 from '../../../assets/images/img-projetos/sebo.png';
 import Image4 from '../../../assets/images/img-projetos/Ecofin.png';
 import Image5 from '../../../assets/images/img-projetos/SaborEcia.png';
 import Image6 from '../../../assets/images/img-projetos/Logo-JinStore.svg';
@@ -50,11 +50,11 @@ const projects: Project[] = [
   
   {
     image: Image3,
-    subtitle: 'project.Trabalhadores.subtitle',
-    title: 'project.Trabalhadores.title',
-    description: 'project.Trabalhadores.description',
-    githubLink: 'https://github.com/marconesdb/trabalhadores_da_ultima_hora_final',
-    externalLink: 'https://www.trabalhadoresdaultimahora.com.br/',
+    subtitle: 'project.Sebo.subtitle',
+    title: 'project.Sebo.title',
+    description: 'project.Sebo.description',
+    githubLink: 'https://github.com/marconesdb/seboLivraria_final',
+    externalLink: 'https://sebo-livraria-final.vercel.app/',
   },
   {
     image: Image4,

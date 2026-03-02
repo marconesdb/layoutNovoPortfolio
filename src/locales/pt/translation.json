@@ -33,10 +33,10 @@
           "title": "Cartão de Crédito",
           "description": "Este é um projeto que permite aos usuários inserir dados de cartão de crédito em um formulário para realizar uma compra."
         },
-        "Trabalhadores": {
+        "Sebo": {
           "subtitle": "React.JSL, Tailwind.CSS e Typescript",
-          "title": "Trabalhadores da Última Hora",
-          "description": "Site dos Trabalhadores da Última Hora"
+          "title": "Sebo - Universo das Páginas",
+          "description": "Site de Ecommerce de livros usados."
         },
         "EcofinPage": {
           "subtitle": "React.JS, Tailwind.CSS e Typescript",
